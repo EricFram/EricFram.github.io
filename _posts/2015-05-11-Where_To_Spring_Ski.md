@@ -30,7 +30,7 @@ In order to retrieve historical snow depth data from the powederlin.es API, we h
 
 The code will accept any number of station names as long as the names match those in the SNOTEL network. I've picked 5 examples here.
 
-
+ 
 ```r
 names <- c("BRIGHTON","SNOWBIRD","VAIL MOUNTAIN","SQUAW VALLEY G.C.","TAOS POWDERHORN")
 

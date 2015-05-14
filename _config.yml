@@ -3,3 +3,4 @@ markdown: redcarpet
 permalink: /blog/:year/:month/:day/:title
 highlighter: pygments
 encoding: utf-8
+pygments: true
