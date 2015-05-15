@@ -92,4 +92,47 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 	margin: 5px 15px 0px 0px;
 	font-family: 'Montserrat', Helvetica, sans-serif; }
 
+/* Nav Bar Size Adjustment for Smaller Screens */
 
+#EF {
+	display: none;
+}
+
+@media(max-width: 545px){
+	.header ul {
+		font-size: 70%;
+	}
+	
+	.header h3 {
+		font-size: 19px;
+	} 
+} 
+
+@media(max-width: 500px){
+	.header ul {
+		font-size: 60%;
+	}
+	
+	#fullname {
+		display: none;
+	}
+
+	#EF {
+		display: inline-block;
+	}	
+} 
+
+@media(max-width: 331px){
+	.header ul {
+		font-size: 50%;
+	}
+	
+	#fullname {
+		display: none;
+	}
+
+	#EF {
+		display: inline-block;
+		font-size: 16px;
+	}	
+} 
