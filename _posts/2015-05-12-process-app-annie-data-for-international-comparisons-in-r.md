@@ -2,7 +2,7 @@
 layout: post
 title: "How to Process App Annie Data in R to Compare App Revenue and Downloads by Territory"
 date: 2015-05-13
-categories: [R-Programming, Insights]
+categories: [R-Programming]
 ---
 Eric Fram  
 

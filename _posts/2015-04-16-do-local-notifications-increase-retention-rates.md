@@ -2,7 +2,7 @@
 layout: post
 title: "Do Local Notifications Increase Retention Rates?"
 date: 2015-04-16
-categories: [R-Programming, Insights]
+categories: [Insights]
 ---
 Eric Fram  
 

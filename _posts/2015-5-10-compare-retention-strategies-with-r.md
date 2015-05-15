@@ -2,7 +2,7 @@
 layout: post
 title: "Using Flurry Data to Compare App Retention Strategies in R"
 date: 2015-05-10
-categories: [R-Programming, Insights]
+categories: [R-Programming]
 ---
 Eric Fram  
 

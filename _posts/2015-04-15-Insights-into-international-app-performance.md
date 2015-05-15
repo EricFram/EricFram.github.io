@@ -2,7 +2,7 @@
 layout: post
 title: "Insights into International App Performance"
 date: 2015-04-15
-categories: [R-Programming, Insights]
+categories: [Insights]
 ---
 Eric Fram  
 
