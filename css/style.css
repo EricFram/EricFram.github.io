@@ -150,5 +150,5 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 	}	
 } 
 
-/* Footer Adjustment for Small Screens */
-
+/* Image Styling */
+img {max-width:100%;}
