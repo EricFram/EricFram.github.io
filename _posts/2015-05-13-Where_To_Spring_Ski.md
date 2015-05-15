@@ -2,23 +2,25 @@
 layout: post
 title: "Using the powderlin.es API and R to Improve Spring Ski Trip Planning"
 date: 2015-05-13
+categories: [R-Programming]
 ---
 Eric Fram  
 
+All of the code used here is [available on GitHub](https://github.com/EricFram/Ski_Resort_Selection/tree/master/Snow_Predict/using_powderlines)
 
 ##Introduction
 
-For those who want to squeeze in every last bit of skiing they can into the season, booking a ski trip during the last 2 weeks before most resorts close is not uncommon. This late in the year though, it can be hard to tell ahead of time which resorts will have enough snow to make a trip worthwhile. 
+If you like to get the most out of every ski season, you've probably found yourself booking trips right before  resorts close for the spring (April 1 to April 15-ish). So late in the year though, it can be hard to tell ahead of time which resorts will have enough snow to make a trip worthwhile. 
 
-If this is an issue you've run into, then the analysis in this document might be able to help you choose where to go spring skiing with more confidence. 
+If this is an issue you've run into, then this analysis might be able to help you.
 
 The R code we use here reads historical snow data for a selection of ski areas from the [powderlin.es API](http://powderlin.es/api.html), then performs several different analyses in order to create a useful model for predicting which resorts will have the deepest snow during a given period. 
 
-####A few caveats
+###A few caveats
 
 The data from the powderlin.es API is from Natural Resource Convervation Services SNOTEL (Snow Telemetry) stations. SNOTEL stations measure snow depth accurately, but aren't typically located on ski slopes. Thus, the SNOTEL data differs somewhat from the on-slope snow depth reported by resorts. Another issue is that not all major ski resorts have a SNOTEL station nearby (such as Aspen and Park City), so data for those areas is not available through this API. 
 
-I've chosen to use powderline.es for this first iteration as it is free and does not require authentication. Data provided directly by ski resorts, such as that provided through the [OnTheSnow API]("http://www.onthesnow.com/ots/webservice_tools/OTSWebService2009.html") will better reflect actual ski conditions, but those typically require authentication and/or payment.
+I've chosen to use powderline.es for this first iteration as it is free and does not require authentication. Data provided directly by ski resorts, such as that provided through the [OnTheSnow API](http://www.onthesnow.com/ots/webservice_tools/OTSWebService2009.html) will better reflect actual ski conditions, but those typically require authentication and/or payment.
 
 Using ski resort snow data instead of SNOTEL data is at the top of the to do list for the next iteration of this program.
 
@@ -222,7 +224,7 @@ plot <- plot + theme(axis.text=element_text(size=8))
 plot 
 ```
 
-![](Where_To_Spring_Ski_files/figure-html/unnamed-chunk-5-1.png) 
+![]({{ site.url }}/figures/Where_To_Spring_Ski_files/figure-html/unnamed-chunk-5-1.png) 
 
 This chart is useful to see which areas had the most snow for spring skiing this year, but doesn't have much predictive value.
 
@@ -265,7 +267,7 @@ plot2 <- plot2 + geom_point(size=3)
 plot2
 ```
 
-![](Where_To_Spring_Ski_files/figure-html/unnamed-chunk-7-1.png) 
+![]({{ site.url }}/figures/Where_To_Spring_Ski_files/figure-html/unnamed-chunk-7-1.png) 
 
 At a glance, it doesn't look like we will be able to fit a model to this data, but let's give it a try anyways. 
 
@@ -314,7 +316,7 @@ plot4 <- plot4 + geom_point(stat='identity') #+ geom_line(stat='identity')
 plot4
 ```
 
-![](Where_To_Spring_Ski_files/figure-html/unnamed-chunk-9-1.png) 
+![]({{ site.url }}/figures/Where_To_Spring_Ski_files/figure-html/unnamed-chunk-9-1.png) 
 
 Now, let's see if we can fit linear models to the data. 
 
@@ -356,7 +358,7 @@ plot4 <- plot4 + stat_smooth(aes(group=Resort),method='lm',se=FALSE)
 plot4
 ```
 
-![](Where_To_Spring_Ski_files/figure-html/unnamed-chunk-11-1.png) 
+![]({{ site.url }}/figures/Where_To_Spring_Ski_files/figure-html/unnamed-chunk-11-1.png) 
 
 Now, let's use these models to see how accurately they would have predicting snow depth for April 2015 (data we actually have)
 
