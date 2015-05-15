@@ -9,7 +9,7 @@ Eric Fram
 All of the code used here is [available on GitHub](https://github.com/EricFram/App_Insights) 
 ## Introduction
 
-This document will show you how to replicate the analysis I use in "Insights into International App Performance", which I originally posted on ZippyBrain.com on 15 April 2015. [Link to the Article](http://zippybrain.com/2015/04/insights-into-international-app-performance/)
+This document will show you how to replicate the analysis I use in "Insights into International App Performance", which I originally posted on ZippyBrain.com on 15 April 2015. [Link to the Article]({{ site.url }}/articles/2015/04/15/Insights-into-international-app-performance/)
 
 The R code I use here should work properly with any download and revenue reports you get directly from App Annie. I have included two sample files in [this repo](https://github.com/EricFram/App_Insights/tree/master/Intl_Comps) in the App Annie report format for you to try out if you don't have any of your own data. They are titled as follows:
 

@@ -10,7 +10,7 @@ All of the code used here is [available on GitHub](https://github.com/EricFram/A
 
 ##Introduction
 
-This document will show you how to use R to compare app retention data downloaded from Flurry. The code here accompanies the article I published on ZippyBrain.com titled "Do Local Notifications Increase Retention Rates?". [Link to the Article](http://zippybrain.com/2015/04/do-local-notifications-increase-retention-rates/)
+This document will show you how to use R to compare app retention data downloaded from Flurry. The code here accompanies the article I published on ZippyBrain.com titled "Do Local Notifications Increase Retention Rates?". [Link to the Article]({{ site.url }}/articles/2015/04/16/do-local-notifications-increase-retention-rates/)
 
 Here, I compare retention data between two different apps, but you can also use this code to compare data between different versions of the same app or between different date ranges of the same app.
 

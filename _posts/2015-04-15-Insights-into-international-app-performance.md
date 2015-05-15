@@ -6,13 +6,13 @@ categories: [R-Programming, Insights]
 ---
 Eric Fram  
 
-<em>This article was original posted on ZippyBrain.com on April 15, 2015. [Link](http://zippybrain.com/2015/04/insights-into-international-app-performance/)</em>
+<em>This article was originally posted on ZippyBrain.com on April 15, 2015. [Link](http://zippybrain.com/2015/04/insights-into-international-app-performance/)</em>
 
 
 *If you want to try this analysis with your own data, I've created some guides to help you follow along.*
 
-- *If you get your revenue and downloads data from iTunes Connect: [click here](http://localhost:4000/articles/2015/05/13/process-itunes-connect-data-for-international-comparisons-in-r/)*
-- *If you get your revenue and downloads data from App Annie: [click here](http://localhost:4000/articles/2015/05/13/process-app-annie-data-for-international-comparisons-in-r/)*
+- *If you get your revenue and downloads data from iTunes Connect: [click here]({{ site.url }}/articles/2015/05/13/process-itunes-connect-data-for-international-comparisons-in-r/)*
+- *If you get your revenue and downloads data from App Annie: [click here]({{ site.url }}/articles/2015/05/13/process-app-annie-data-for-international-comparisons-in-r/)*
 
 *Or just jump straight into the files on Github. [Link](https://github.com/EricFram/App_Insights)*
 
