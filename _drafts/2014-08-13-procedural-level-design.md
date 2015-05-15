@@ -6,7 +6,7 @@ categories: [Game-Development]
 ---
 Eric Fram  
 
-<em>This article was originally posted on ZippyBrain.com on August 13th, 2014. [Link.](hhttp://zippybrain.com/2014/08/procedural-level-design-in-fight-the-fire/)</em>
+<em>This article was originally posted on ZippyBrain.com on August 13th, 2014. [Link.](http://zippybrain.com/2014/08/procedural-level-design-in-fight-the-fire/)</em>
 
 Hey everyone! Thank you so much for taking the time to read about our upcoming wildfire containment game, Fight the Fire! We are developing quickly and plan to release the app on both iOS and Android, though iOS will likely come first. 
 
