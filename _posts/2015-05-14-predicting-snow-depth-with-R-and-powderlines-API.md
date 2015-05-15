@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Where Should You Spring Ski? How to use the powderlin.es API and R to Make Better Decisions"
-date: 2015-05-13
+date: 2015-05-14
 categories: [R-Programming]
 ---
 Eric Fram  

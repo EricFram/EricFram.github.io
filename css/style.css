@@ -1,9 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic);
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
 
-body { padding-top: 20px; padding-bottom: 40px; font-family: 'Merriweather', Georgia, Times; font-size: 16px; }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: 'Merriweather', Georgia, Times; font-weight: 700;}
+
+body { padding-top: 20px; padding-bottom: 40px; font-family: 'Lora', Georgia, Times; font-size: 16px; }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: 'Lora', Georgia, Times; font-weight: 700;}
 
 blockquote p { font-size: 16px; line-height: 1.6em; }
 
@@ -13,7 +15,8 @@ blockquote p { font-size: 16px; line-height: 1.6em; }
 /* Navigation */
 h3.text-muted a {text-decoration: none; color: #4A4A4A; }
 h3.text-muted a:hover { text-decoration: none; color: #34AADC; }
-.header ul a {color: #777})
+.header a {color: #777})
+
 
 img.avatar { margin-bottom: 30px; }
 		
@@ -62,7 +65,7 @@ ul.swatch li:first-child { webkit-border-top-left-radius: 9px; -webkit-border-bo
 .notes, .contact, .about, .cv, .error, .swatches { margin-bottom: 30px; }
 
 /* Contact */
-iframe {font-family: 'Merriweather', Georgia, Times; font-size: 16px;}
+iframe {font-family: 'Lora', Georgia, Times; font-size: 16px;}
 
 /* About */
 .about ul.list-unstyled li { line-height: 30px; text-indent: -30px; margin-left: 30px;}
@@ -156,3 +159,4 @@ img {max-width:100%;}
 
 /* Footer Styling */
 .footer a {color: #777;}
+.footer a:hover {color: #34AADC;}

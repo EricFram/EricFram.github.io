@@ -1,23 +1,22 @@
 ---
 layout: post
-title: "How to Process iTunes Connect Data in R to Compare App Revenue and Downloads by Territory"
+title: "How to Process App Annie Data in R to Compare App Revenue and Downloads by Territory"
 date: 2015-05-13
-categories: [R-Programming, Insights]
+categories: [R-Programming]
 ---
 Eric Fram  
 
-All of the code used here is [available on GitHub](https://github.com/EricFram/App_Insights)
-
+All of the code used here is [available on GitHub](https://github.com/EricFram/App_Insights) 
 ## Introduction
 
-This document will show you how to replicate the analysis I use in "Insights into International App Performance", which I originally posted on ZippyBrain.com on 15 April 2015. [Link to the Article](http://zippybrain.com/2015/04/insights-into-international-app-performance/)
+This document will show you how to replicate the analysis I use in "Insights into International App Performance", which I originally posted on ZippyBrain.com on 15 April 2015. [Link to the Article]({{ site.url }}/articles/2015/04/15/Insights-into-international-app-performance/)
 
-The R code I use here should work properly with any download and revenue reports you get directly from iTunes Connect. I have included two sample files in [this repo](https://github.com/EricFram/App_Insights/tree/master/Intl_Comps) in the iTunes Connect report format for you to try out if you don't have any of your own data. They are titled as follows:
+The R code I use here should work properly with any download and revenue reports you get directly from App Annie. I have included two sample files in [this repo](https://github.com/EricFram/App_Insights/tree/master/Intl_Comps) in the App Annie report format for you to try out if you don't have any of your own data. They are titled as follows:
 
-- Sample-intlDownloads-iTunesConnectFormat.csv
-- Sample-intlRevenue-iTunesConnectFormat.csv
+- Sample-intlDownloads-AppAnnieFormat.csv
+- Sample-intlRevenue-AppAnnieFormat.csv
 
-The data in these files aren't Zippy Brain's actual figures (I generated them specifically for this) but they are reasonably realistic and are formatted exactly as they arrive from iTunes.
+The data in these files aren't Zippy Brain's actual figures (I generated them specifically for this) but they are reasonably realistic and are formatted exactly as they arrive from App Annie.
 
 NOTE: If you are using your own data, make sure that the date ranges for both the downloads and the revenue reports are the same. 
 
@@ -33,12 +32,12 @@ The first step is to actually read your reports data into R. First, just save yo
 ```r
 directory <- paste(getwd())
 
-rev.filename <- "Sample-intlRevenue-iTunesConnectFormat.csv"
-DL.filename <- "Sample-intlDownloads-iTunesConnectFormat.csv"
+rev.filename <- "Sample-intlRevenue-AppAnnieFormat.csv"
+DL.filename <- "Sample-intlDownloads-AppAnnieFormat.csv"
 ```
 
 The getData function will read the files into R and process them appropriately. It works as follows:
-1. Read the iTunes Connect report into R
+1. Read the App Annie report into R
 2. Sum the total downloads or revenues for each territory for the time period of the report
 3. Return properly-formatted summary data
 
@@ -49,51 +48,30 @@ Then run the getData function on both reports.
 getData <- function(directory,filename,type){
       
       #read the .csv file into R and skip header information
-      df <- read.csv(paste(directory,'/',filename,sep=""),
-                              skip=4)
-      
-      #replace the "-"'s that itunes puts in for null values with 0's
-      df <- as.data.frame(sapply(df,gsub,pattern='-',replacement=0))
-      
-      #ditch the first column
-      df<- df[,2:ncol(df)]
-      
-      #fix column class
-      for (i in 1:ncol(df)){
-            df[,i] <- as.numeric(as.character(df[,i]))
-      } 
-      
-      sums <- c()
-      #sum all the data for each territory and ditch daily data
-      for (i in 1:ncol(df)){       
-            sums[i] <- sum((df[2:nrow(df),i]))       
-      }
-      
-      #create a new df with just territory names and sums by territory
-      #get territory names as a vector
-      names <- as.vector(colnames(df))
-      
-      #create new df with just relevant information
-      df.sums <- data.frame(names,sums)      
-      
       if (type == "Revenue"){
-           colnames(df.sums)[1:2] <- c("Territory", "Revenue")          
-      } else if (type=="Downloads") {
-            colnames(df.sums)[1:2] <- c("Territory","Downloads")
-      } else {
-           print("Please specify type as either 'Revenue' or 'Downloads'")  
-      }
+            df <- read.csv(paste(directory,'/',filename,sep=""), skip=9)     
+      } else if (type == "Downloads") {
+            df <- read.csv(paste(directory,'/',filename,sep=""),skip=8)     
+      } else {print("Please specify type as either 'Revenue' or 'Downloads'")}
       
-      #remove .Sales and .App.Units from Territory and replace periods with spaces
-      df.sums <- as.data.frame(sapply(df.sums,gsub,pattern='.Sales',replacement=""))
-      df.sums <- as.data.frame(sapply(df.sums,gsub,pattern='.App.Units',replacement=""))
-      df.sums$Territory <- (sapply(df.sums$Territory,gsub,pattern='\\.',replacement=" "))
-      df.sums
+      #take on the territory lables and the totals by territory
+      df <- df[c(1,nrow(df)),3:ncol(df)-1]
+      
+      #transpose the data
+      df <- as.data.frame(t(df))
+      
+      #fix row names     
+      if (type == "Revenue"){
+            colnames(df)[1:2] <- c("Territory","Revenue")
+      } else {
+            colnames(df)[1:2] <- c("Territory","Downloads")
+      }     
+      df       
 }
 
 #run the get data function to get the download and revenue data
-rev.data <- getData(directory,rev.filename,"Revenue")
-DL.data <- getData(directory,DL.filename,"Downloads")
+rev.data <- getData(directory,rev.filename,'Revenue')
+DL.data <- getData(directory,DL.filename,'Downloads')
 ```
 
 ### Processsing the Data
@@ -103,7 +81,7 @@ At this point, the revenue and the downloads data are still in separate data fra
 
 ```r
 #join the data frames based on territories
-both.data <- merge(x=DL.data, y=rev.data, by='Territory', all=TRUE)
+both.data <- merge(x=DL.data, y=rev.data, by='Territory', all.x=TRUE)
 rm(rev.data)
 rm(DL.data)
 
@@ -189,4 +167,4 @@ library(gridExtra)
 grid.arrange(plot2,plot3,plot1,ncol=3)
 ```
 
-![]({{ site.url }}/figures/Intl_Comps_w_iTunesConnect_files/figure-html/unnamed-chunk-8-1.png) 
+![]({{ site.url }}/figures/Intl_Comps_w_AppAnnie_files/figure-html/unnamed-chunk-8-1.png) 
