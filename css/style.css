@@ -13,6 +13,7 @@ blockquote p { font-size: 16px; line-height: 1.6em; }
 /* Navigation */
 h3.text-muted a {text-decoration: none; color: #4A4A4A; }
 h3.text-muted a:hover { text-decoration: none; color: #34AADC; }
+.header ul a {color: #777})
 
 img.avatar { margin-bottom: 30px; }
 		
@@ -152,3 +153,6 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 
 /* Image Styling */
 img {max-width:100%;}
+
+/* Footer Styling */
+.footer a {color: #777;}
