@@ -105,6 +105,7 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 	
 	.header h3 {
 		font-size: 19px;
+		margin-top: -2px;
 	} 
 } 
 
@@ -119,7 +120,11 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 
 	#EF {
 		display: inline-block;
+		margin-top: -4px;
+		
 	}	
+
+
 } 
 
 @media(max-width: 331px){
@@ -134,5 +139,8 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 	#EF {
 		display: inline-block;
 		font-size: 16px;
+		margin-top: -4.5x;
+		
 	}	
+	
 } 
