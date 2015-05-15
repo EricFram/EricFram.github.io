@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Using iTunes Connect Data to Compare App Revenue and Downloads by Territory in R"
+title: "How to Process iTunes Connect Data in R to Compare App Revenue and Downloads by Territory"
 date: 2015-05-13
 categories: [R-Programming, Insights]
 ---
