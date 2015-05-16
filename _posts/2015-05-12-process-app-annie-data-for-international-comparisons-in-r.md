@@ -6,7 +6,8 @@ categories: [R-Programming]
 ---
 Eric Fram  
 
-All of the code used here is [available on GitHub](https://github.com/EricFram/App_Insights) 
+*All of the code used here is [available on GitHub](https://github.com/EricFram/App_Insights)*
+
 ## Introduction
 
 This document will show you how to replicate the analysis I use in "Insights into International App Performance", which I originally posted on ZippyBrain.com on 15 April 2015. [Link to the Article]({{ site.url }}/articles/2015/04/15/Insights-into-international-app-performance/)

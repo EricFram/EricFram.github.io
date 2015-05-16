@@ -157,6 +157,8 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 /* Image Styling */
 img {max-width:100%;}
 
+.projectIcon {width: 30px; height: 30px; margin-top: 3px; margin-bottom: 3px;}
+
 /* Footer Styling */
 .footer a {color: #777;}
 .footer a:hover {color: #34AADC;}
