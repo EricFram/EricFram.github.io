@@ -35,7 +35,7 @@ img.avatar { margin-bottom: 30px; }
 .marketing p.lead { line-height: 30px; }
 
 /* Notes */
-.notelist { max-width: 600px; width: 100%; margin: 0 auto; }
+.notelist { width: 85%; margin: 0 auto; }
 ul.listnotes { margin: 0 auto; }
 ul.listnotes li {line-height: 30px; } 
 
@@ -166,13 +166,16 @@ img {max-width:100%;}
 /* post list page styling */
 
 .postfilter {
-	max-width: 600px;
-	width: 100%;
-	
+	width: 85%%;
 	margin-right: auto;
 	margin-left: auto;
 	display: block;
 	line-height: 1.42;
 	/* border-bottom: 1px solid #e5e5e5; */
+}
+
+.listnotes > li {
+	border-top: 1px solid #e5e5e5;
+
 }
 
