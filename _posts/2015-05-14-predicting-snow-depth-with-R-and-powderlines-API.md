@@ -6,7 +6,7 @@ categories: [R-Programming]
 ---
 Eric Fram  
 
-All of the code used here is [available on GitHub](https://github.com/EricFram/Ski_Resort_Selection/tree/master/Snow_Predict/using_powderlines)
+*All of the code used here is [available on GitHub](https://github.com/EricFram/Ski_Resort_Selection/tree/master/Snow_Predict/using_powderlines)*
 
 ##Introduction
 

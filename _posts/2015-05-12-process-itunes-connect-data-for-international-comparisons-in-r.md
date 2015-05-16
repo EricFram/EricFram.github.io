@@ -6,7 +6,7 @@ categories: [R-Programming]
 ---
 Eric Fram  
 
-All of the code used here is [available on GitHub](https://github.com/EricFram/App_Insights)
+*All of the code used here is [available on GitHub](https://github.com/EricFram/App_Insights)*
 
 ## Introduction
 
