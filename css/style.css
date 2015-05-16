@@ -35,7 +35,7 @@ img.avatar { margin-bottom: 30px; }
 .marketing p.lead { line-height: 30px; }
 
 /* Notes */
-.notelist { max-width: 600px; width: 100%; margin: 0 auto; }
+.notelist { width: 85%; margin: 0 auto; }
 ul.listnotes { margin: 0 auto; }
 ul.listnotes li {line-height: 30px; } 
 
@@ -154,7 +154,7 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 	}	
 } 
 
-/* Image Styling */
+/* image styling */
 img {max-width:100%;}
 
 .projectIcon {width: 30px; height: 30px; margin-top: 3px; margin-bottom: 3px;}
@@ -162,3 +162,32 @@ img {max-width:100%;}
 /* Footer Styling */
 .footer a {color: #777;}
 .footer a:hover {color: #34AADC;}
+
+/* post list page styling */
+
+.postfilter {
+	width: 85%%;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	line-height: 1.42;
+	/* border-bottom: 1px solid #e5e5e5; */
+}
+
+.listnotes > li {
+	border-top: 1px solid #e5e5e5;
+}
+
+/* project page styling */
+
+.projects {
+	width: 85%;
+	margin: 0 auto;
+}
+
+.projectList {
+	list-style: none;
+}
+
+
+
