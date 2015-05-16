@@ -2,7 +2,7 @@
 layout: post
 title: "Our Next Project: A Personal Finance Education RPG"
 date: 2015-04-08
-categories: [Game-Development]
+categories: [game-development]
 ---
 Eric Fram  
 
