@@ -168,9 +168,11 @@ img {max-width:100%;}
 .postfilter {
 	max-width: 600px;
 	width: 100%;
-	margin-bottom: 17px;
+	
 	margin-right: auto;
 	margin-left: auto;
 	display: block;
+	line-height: 1.42;
+	/* border-bottom: 1px solid #e5e5e5; */
 }
 
