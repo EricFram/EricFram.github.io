@@ -75,6 +75,7 @@ iframe {font-family: 'Lora', Georgia, Times; font-size: 16px;}
 /* About */
 .about ul.list-unstyled li { line-height: 30px; text-indent: -30px; margin-left: 30px;}
 
+
 /* Guides */
 .guide { width: 90%; margin: 0 auto 60px auto; line-height: 26px;}
 .guide .title { padding: 100px 30px 0px; width: 100%; height: 60%; margin-bottom: 40px; background: #d5d5d5; color: #428bca; }
@@ -129,6 +130,8 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 	.contact {
 		margin-top: 17px;
 	}
+
+	.about {margin-top: 17px;}
 }
 
 @media(max-width: 545px){
@@ -175,12 +178,21 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 /* image styling */
 img {max-width:100%;}
 
-/* welcome styling */
-.welcome {
-	background-image: url("http://zippybrain.com/wp-content/uploads/2015/05/snow-light.jpg");
-	background-size: 1920px;
-	background-repeat: no-repeat;
+/* welcome */
+
+.blurb {
+	margin-bottom: 27px;
+	width: 85%;
+	margin-right: auto;
+	margin-left: auto;
 }
+
+#LA {
+	font-size: 24px;
+}
+
+
+
 
 
 
@@ -213,8 +225,8 @@ img {max-width:100%;}
 
 /* project page styling */
 
-.projects {
-	width: 75%;
+.project {
+	width: 85%;
 	margin: 0 auto;
 
 } 
