@@ -176,6 +176,19 @@ img {max-width:100%;}
 
 .listnotes > li {
 	border-top: 1px solid #e5e5e5;
-
 }
+
+/* project page styling */
+
+.projects {
+	width: 85%;
+	margin: 0 auto;
+}
+
+.projectList {
+	list-style: none;
+}
+
+
+
 
