@@ -17,6 +17,7 @@ h3.text-muted a {text-decoration: none; color: #4A4A4A; }
 h3.text-muted a:hover { text-decoration: none; color: #34AADC; }
 .header a {color: #777})
 
+.header {min-width: 246px;}
 
 img.avatar { margin-bottom: 30px; }
 		
@@ -174,20 +175,27 @@ img {max-width:100%;}
 	/* border-bottom: 1px solid #e5e5e5; */
 }
 
+
 .listnotes > li {
 	border-top: 1px solid #e5e5e5;
+	
+} 
+
+.listnotes {
+	
 }
 
 /* project page styling */
 
 .projects {
-	width: 85%;
+	width: 75%;
 	margin: 0 auto;
-}
+
+} 
 
 .projectList {
 	list-style: none;
-}
+
 
 
 
