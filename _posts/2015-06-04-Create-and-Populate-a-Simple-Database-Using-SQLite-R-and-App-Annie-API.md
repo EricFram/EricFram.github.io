@@ -9,7 +9,7 @@ Eric Fram
 
 I've found that I frequently want to compare sales and revenue data across territories, dates, and applications. We use App Annie to keep track of all of this information, but constantly going to their website to download .csv files gets pretty tedious. They offer and API that let's me get all the data I want much more efficiently. Instead of making frequent API calls, I prefer to store the data in my own database.
 
-The database management system I've chosen for this purpose is [SQLite]("https://www.sqlite.org/"). It's lightweight, easy to set up, and perfect for storing a relatively small amount of data. It would not be good if I had a large amount of data that I needed to store on a server or if lots of other people were also accessing the database, but it is perfect for my uses here.
+The database management system I've chosen for this purpose is [SQLite](https://www.sqlite.org/). It's lightweight, easy to set up, and perfect for storing a relatively small amount of data. It would not be good if I had a large amount of data that I needed to store on a server or if lots of other people were also accessing the database, but it is perfect for my uses here.
 
 From within R, I can get the data from the API and create and set up the sales and revenue database with only about 100 lines of code. Once everything is set up, it's easy to query data and run a wide range of analyses.
 
@@ -17,7 +17,7 @@ This guide will show you how to set this system up for yourself.
 
 ##Get Sales and Revenue Data from App Annie ##
 
-We can get all the data we need with just two API calls after a little bit of preparation work. First, you'll need to get your API key from App Annie. You can do so [here]("https://www.appannie.com/account/api/key/"). Next, you'll need to make sure that you have the "httr" and "jsonlite" packages installed in R.
+We can get all the data we need with just two API calls after a little bit of preparation work. First, you'll need to get your API key from App Annie. You can do so [here](https://www.appannie.com/account/api/key/). Next, you'll need to make sure that you have the "httr" and "jsonlite" packages installed in R.
 
 You'll also need to know your account number. If you don't know your App Annie account number, you can retrieve it through the API as so:
 
@@ -201,4 +201,4 @@ dbDisconnect(con)
 ```
 ##Conclusion##
 
-Thanks for reading. I definitely get that this may be overkill for such a small amount of data, but I've found that storing everything in a database like this makes it much easier to access exactly the data I want. If you have any questions or comments, please feel free to contact me directly or tweet at me [@ZippyBrain]("https://twitter.com/ZippyBrain").
+Thanks for reading. I definitely get that this may be overkill for such a small amount of data, but I've found that storing everything in a database like this makes it much easier to access exactly the data I want. If you have any questions or comments, please feel free to contact me directly or tweet at me [@ZippyBrain](https://twitter.com/ZippyBrain).
