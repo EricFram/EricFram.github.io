@@ -7,11 +7,17 @@ categories: [R-Programming]
 Eric Fram
 ##Introduction##
 
+I've found that I frequently want to compare sales and revenue data across territories, dates, and applications. We use App Annie to keep track of all of this information, but constantly going to their website to download .csv files gets pretty tedious. They offer and API that let's me get all the data I want much more efficiently. Instead of making frequent API calls, I prefer to store the data in my own database.
 
+The database management system I've chosen for this purpose is [SQLite]("https://www.sqlite.org/"). It's super lightweight, super easy to set up, and perfect for storing a relatively small amount of data. It would not be good if I had a large amount of data that I needed to store on a server or if lots of other people were also accessing the database.  SQLite is perfect for my uses here.
+
+From within R, I can get the data from the API and create and set up the sales and revenue database with only about 100 lines of code. Once everything is set up, it's easy to query data and run a wide range of analyses.
+
+This guide will show you how to set this system up for yourself.
 
 ##Get Sales and Revenue Data from App Annie ##
 
-App Annie's API makes it super easy to get all the data we need with just two API calls. We just need to do a little bit of preparation work. First, you'll need to get your API key from App Annie. You can do so [here]("https://www.appannie.com/account/api/key/"). Next, you'll need to make sure that you have the "httr" and "jsonlite" packages installed in R.
+We can get all the data we need with just two API calls after a little bit of preparation work. First, you'll need to get your API key from App Annie. You can do so [here]("https://www.appannie.com/account/api/key/"). Next, you'll need to make sure that you have the "httr" and "jsonlite" packages installed in R.
 
 You'll also need to know your account number. If you don't know your App Annie account number, you can retrieve it through the API as so:
 
@@ -53,9 +59,9 @@ colnames(df)
 ## [13] "revenue.product.downloads" "revenue.product.updates"    "revenue.product.refunds"    "revenue.iap.promotions"
 ## [17] "revenue.iap.sales"         "revenue.iap.refunds"
 ```
-Now we have all of our revenue and downloads data in one place, broken down by date, territory, and application. Each row in this new data represents a unique combination of date, country, and product id. In this data frame though, we can't really tell which product_id is associated with which app. This is easy to fix.
+Now we have all of our revenue and downloads data in one place broken down by date, territory, and application. Each row in this new data represents a unique combination of date, country, and product id. In this data frame though, we can't really tell which product_id is associated with which app. This is easy to fix.
 
-## Get App Reference Data from App Annie ##
+## Get App Name Reference Data from App Annie ##
 
 We can make another call to the API to check which product_id is associated with which app.
 
@@ -83,11 +89,11 @@ At this stage, the database we are creating is super simple. It's just two table
 
 ![]({{ site.url }}/images/Database_ER.png)
 
-SQLite automatically creates Row ID's for use as primary keys for each table, so we'll just use those. Also, since SQLite doesn't support Foreign Keys by default and since App Annie is already enforcing Foreign Key relationships in this data, I'm not going to specifically the one here.
+SQLite automatically creates Row ID's for use as primary keys for each table, so we'll just use those. Also, since SQLite doesn't support Foreign Keys by default and since App Annie is already enforcing Foreign Key relationships in this data, I'm not going to explicitly specify one here.
 
 ## Create and Populate the Database ##
 
-We can actually create a new SQLite database from within R using the RSQLite package. RSQLite's dbConnect function will connect to a database that already exists or create one if the one you specify doesn't already exist.
+We can create a new SQLite database from within R using the RSQLite package. RSQLite's dbConnect function will create a new empty database if the one you specify doesn't already exist.
 
 ```r
 #Connect to the app information database
@@ -129,24 +135,24 @@ testData
 ```
 ```
 product_name                                           SUM(account_sales.[units.product.downloads])
-## 1                     Beautiful You the App                                           xx,xxx
-## 2  Birds vs. Bees: Battle for the Birdhouse                                           xx,xxx
-## 3             Birds vs. Bees: Beehive Blast                                           xx,xxx
-## 4                                Dot Direct                                           xx,xxx
-## 5                           Earth Day Carol                                           xx,xxx
-## 6                            Fight the Fire                                           xx,xxx
-## 7                  Helitack: Fight the Fire                                           xx,xxx
-## 8                                  Puznetic                                           xx,xxx
-## 9                        Puznetic Anthology                                           xx,xxx
-## 10                             Puznetic Art                                           xx,xxx
-## 11                            Puznetic Pets                                           xx,xxx
-## 12                             Puznetic Sky                                           xx,xxx
+## 1                     Beautiful You the App                                             x,xxx
+## 2  Birds vs. Bees: Battle for the Birdhouse                                            xx,xxx
+## 3             Birds vs. Bees: Beehive Blast                                            xx,xxx
+## 4                                Dot Direct                                             x,xxx
+## 5                           Earth Day Carol                                           xxx,xxx
+## 6                            Fight the Fire                                            xx,xxx
+## 7                  Helitack: Fight the Fire                                            xx,xxx
+## 8                                  Puznetic                                             x,xxx
+## 9                        Puznetic Anthology                                             x,xxx
+## 10                             Puznetic Art                                             x,xxx
+## 11                            Puznetic Pets                                             x,xxx
+## 12                             Puznetic Sky                                             x,xxx
 ```
-Looks like everything is working! (NB: I've obscured the actual numbers with x's. R will return actual numbers for you.)
+Looks like everything is working. (Note: I've obscured the actual numbers with x's. R will return actual numbers for you.)
 
 ## Update the Database as Necessary ##
 
-You'll probably want to update your data at some point. This function will do that! This will work if you've already defined "dbFile" as the path to your database, and "auth" as your bearer authorization.
+You'll probably want to update your data at some point. The function below will do that. It connects to the database, checks to see if there is likely to be new data available, then gets the new data and stores it. This will work if you've already defined "dbFile" as the path to your database, and "auth" as your bearer authorization.
 
 ```r
 #Function to get new data
@@ -194,3 +200,5 @@ update()
 dbDisconnect(con)
 ```
 ##Conclusion##
+
+Thanks for reading. I definitely get that this may be overkill for such a small amount of data, but I've found that storing everything in a database like this makes it much easier to access exactly the data I want. If you have any questions or comments, please feel free to contact me directly or tweet at me [@ZippyBrain]("https://twitter.com/ZippyBrain").
