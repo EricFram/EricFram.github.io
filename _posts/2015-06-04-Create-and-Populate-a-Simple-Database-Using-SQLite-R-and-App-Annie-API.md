@@ -5,11 +5,11 @@ date: 2015-06-04
 categories: [R-Programming]
 ---
 Eric Fram
-##Introduction#
+##Introduction##
 
 
 
-# Get Sales and Revenue Data from App Annie #
+##Get Sales and Revenue Data from App Annie ##
 
 App Annie's API makes it super easy to get all the data we need with just two API calls. We just need to do a little bit of preparation work. First, you'll need to get your API key from App Annie. You can do so [here]("https://www.appannie.com/account/api/key/"). Next, you'll need to make sure that you have the "httr" and "jsonlite" packages installed in R.
 
@@ -34,7 +34,8 @@ Let's go ahead and get all of our sales and revenue data for each date by countr
 
 ```{r}
 #Get sales and revenue breakdown by product, country, and date
-query <- "https://api.appannie.com/v1.2/accounts/{your account number}/sales?break_down=product+country+date"
+query <- "https://api.appannie.com/v1.2/accounts/{your account number}/sales
+                                            ?break_down=product+country+date"
 getdata <- GET(url=query, add_headers(Authorization=auth))
 
 #Convert data into data frame
@@ -46,13 +47,13 @@ df <- flatten(df) # as df originally contains nested data frames
 colnames(df)
 ```
 ```
-[1] "date"                       "country"                    "product_id"                 "units.product.promotions"
-[5] "units.product.downloads"    "units.product.updates"      "units.product.refunds"      "units.iap.promotions"
-[9] "units.iap.sales"            "units.iap.refunds"          "revenue.ad"                 "revenue.product.promotions"
-[13] "revenue.product.downloads" "revenue.product.updates"    "revenue.product.refunds"    "revenue.iap.promotions"
-[17] "revenue.iap.sales"         "revenue.iap.refunds"
+## [1] "date"                       "country"                    "product_id"                 "units.product.promotions"
+## [5] "units.product.downloads"    "units.product.updates"      "units.product.refunds"      "units.iap.promotions"
+## [9] "units.iap.sales"            "units.iap.refunds"          "revenue.ad"                 "revenue.product.promotions"
+## [13] "revenue.product.downloads" "revenue.product.updates"    "revenue.product.refunds"    "revenue.iap.promotions"
+## [17] "revenue.iap.sales"         "revenue.iap.refunds"
 ```
-Now we have all of our revenue and downloads data in one place, broken down by date, territory, and application. Each row in this new data represents a unique combination of date, country, and product_id. In this data frame though, we can't really tell which product_id is associated with which app. This is easy to fix.
+Now we have all of our revenue and downloads data in one place, broken down by date, territory, and application. Each row in this new data represents a unique combination of date, country, and product id. In this data frame though, we can't really tell which product_id is associated with which app. This is easy to fix.
 
 ## Get App Reference Data from App Annie ##
 
@@ -72,7 +73,7 @@ app.list <- app.list[,c(2,6)]
 colnames(app.list)
 ```
 ```
-[1] "product_id"   "product_name"
+## [1] "product_id"   "product_name"
 ```
 Perfect. Now we have a data frame where each product ID is associated with the actual application name. We're ready to insert this new data into our SQLite database.
 
@@ -128,18 +129,18 @@ testData
 ```
 ```
 product_name                                           SUM(account_sales.[units.product.downloads])
-1                     Beautiful You the App                                           xx,xxx
-2  Birds vs. Bees: Battle for the Birdhouse                                           xx,xxx
-3             Birds vs. Bees: Beehive Blast                                           xx,xxx
-4                                Dot Direct                                           xx,xxx
-5                           Earth Day Carol                                           xx,xxx
-6                            Fight the Fire                                           xx,xxx
-7                  Helitack: Fight the Fire                                           xx,xxx
-8                                  Puznetic                                           xx,xxx
-9                        Puznetic Anthology                                           xx,xxx
-10                             Puznetic Art                                           xx,xxx
-11                            Puznetic Pets                                           xx,xxx
-12                             Puznetic Sky                                           xx,xxx
+## 1                     Beautiful You the App                                           xx,xxx
+## 2  Birds vs. Bees: Battle for the Birdhouse                                           xx,xxx
+## 3             Birds vs. Bees: Beehive Blast                                           xx,xxx
+## 4                                Dot Direct                                           xx,xxx
+## 5                           Earth Day Carol                                           xx,xxx
+## 6                            Fight the Fire                                           xx,xxx
+## 7                  Helitack: Fight the Fire                                           xx,xxx
+## 8                                  Puznetic                                           xx,xxx
+## 9                        Puznetic Anthology                                           xx,xxx
+## 10                             Puznetic Art                                           xx,xxx
+## 11                            Puznetic Pets                                           xx,xxx
+## 12                             Puznetic Sky                                           xx,xxx
 ```
 Looks like everything is working! (NB: I've obscured the actual numbers with x's. R will return actual numbers for you.)
 
@@ -170,22 +171,26 @@ update <- function() {
       if (maxDate > newDate) {
             stop("Please wait until newer data is available")
       }
-      #Get new data from API
+      #4- Get new data from API
       else{
-            query <- "https://api.appannie.com/v1.2/accounts/{your account no}/sales?break_down=product+country+date"
+            query <- "https://api.appannie.com/v1.2/accounts/{your account no}/sales
+                                                    ?break_down=product+country+date"
             getdata <- GET(url=query, add_headers(Authorization=auth))
             data <- fromJSON(content(getdata,type="text"))
             df <- data$sales_list
             df <- flatten(df)
 
-      #Add new data to the account_sales table
+      #5- Add new data to the account_sales table
             dbWriteTable(con,"account_sales",
                          df, row.names = NA, overwrite = TRUE, append = FALSE,
                          field.types = NULL)
       }
 }
 
+#Update the information in the database
+update()
+
 #Disconnect from the database
 dbDisconnect(con)
 ```
-#Conclusion#
+##Conclusion##
