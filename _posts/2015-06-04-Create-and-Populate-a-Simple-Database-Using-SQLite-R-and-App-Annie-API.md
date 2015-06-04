@@ -9,7 +9,7 @@ Eric Fram
 
 I've found that I frequently want to compare sales and revenue data across territories, dates, and applications. We use App Annie to keep track of all of this information, but constantly going to their website to download .csv files gets pretty tedious. They offer and API that let's me get all the data I want much more efficiently. Instead of making frequent API calls, I prefer to store the data in my own database.
 
-The database management system I've chosen for this purpose is [SQLite]("https://www.sqlite.org/"). It's super lightweight, super easy to set up, and perfect for storing a relatively small amount of data. It would not be good if I had a large amount of data that I needed to store on a server or if lots of other people were also accessing the database.  SQLite is perfect for my uses here.
+The database management system I've chosen for this purpose is [SQLite]("https://www.sqlite.org/"). It's lightweight, easy to set up, and perfect for storing a relatively small amount of data. It would not be good if I had a large amount of data that I needed to store on a server or if lots of other people were also accessing the database, but it is perfect for my uses here.
 
 From within R, I can get the data from the API and create and set up the sales and revenue database with only about 100 lines of code. Once everything is set up, it's easy to query data and run a wide range of analyses.
 
@@ -85,11 +85,11 @@ Perfect. Now we have a data frame where each product ID is associated with the a
 
 ## Conceptual Data Model ##
 
-At this stage, the database we are creating is super simple. It's just two tables. One for looking up app names based on their product ID's, and one that contains revenue and downloads data. The data model will look like this:
+At this stage, the database we are creating is really simple. It's just two tables. One for looking up app names based on their product ID's, and one that contains revenue and downloads data. The data model will look like this:
 
 ![]({{ site.url }}/images/Database_ER.png)
 
-SQLite automatically creates Row ID's for use as primary keys for each table, so we'll just use those. Also, since SQLite doesn't support Foreign Keys by default and since App Annie is already enforcing Foreign Key relationships in this data, I'm not going to explicitly specify one here.
+SQLite automatically creates Row ID's for use as primary keys for each table, so we'll just use those. Also, since SQLite doesn't support Foreign Keys by default and since App Annie is already enforcing Foreign Key relationships in this data, I'm not going to explicitly specify the one here.
 
 ## Create and Populate the Database ##
 
