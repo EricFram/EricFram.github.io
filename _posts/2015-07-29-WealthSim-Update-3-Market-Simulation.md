@@ -19,7 +19,7 @@ In the game, there are five different possible economic environments that do a r
 	<li><strong>Decline/Bear Market</strong>, based roughly on the period from January 2008 to January 2009</li>
 	<li><strong>Stagflation,</strong> based roughly on the period from 1979 to 1984</li>
 </ol>
-The first 4 environments replicate a full stock market cycle. We included stagflation as a way to include a unique economic situation that can force players to significantly reconsider their strategies. We've build our system to be flexible, so we will be able to add or remove other types of economic environments as needed based on feedback.
+The first 4 environments replicate a full stock market cycle. We included stagflation as a way to include a unique economic situation that can force players to significantly reconsider their strategies. We've built our system to be flexible, so we will be able to add or remove other types of economic environments as needed based on feedback.
 
 The game uses the following table to pick which economic environment will occur next based on the "Percent Time" column. I will never pick the same one twice in a row. The number of turns each environment lasts is randomly picked from between that environment's minimum and maximum length (each turn equals one month).
 <table style="height: 206px;">
