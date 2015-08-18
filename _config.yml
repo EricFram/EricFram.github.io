@@ -3,3 +3,4 @@ markdown: redcarpet
 permalink: /articles/:year/:month/:day/:title
 highlighter: pygments
 encoding: utf-8
+exclude: [bootstrap-3.3.5/node_modules]
