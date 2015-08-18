@@ -5017,12 +5017,12 @@ a.badge:focus {
   padding-top: 180px - 20px;
   padding-bottom: 180px;
   margin-top: -60px;
-  margin-bottom: -60px;
+  margin-bottom: 10px;
   color: inherit;
   background-image: url("/images/sea-sunny-beach-holiday.jpg");
   background-repeat: no-repeat;
-  -webkit-background-size: 3268px 2179px;
-          background-size: 3268px 2179px;
+  -webkit-background-size: 1920px 1280px;
+          background-size: 1920px 1280px;
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -6861,5 +6861,13 @@ body {
 }
 .siteinfo {
   float: right;
+}
+.horiz-ss {
+  max-height: 345px;
+  margin-top: -25px;
+  margin-bottom: 45px;
+}
+.vert-ss {
+  max-width: 345px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
