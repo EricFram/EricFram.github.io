@@ -5014,18 +5014,22 @@ a.badge:focus {
   margin-left: 3px;
 }
 .jumbotron {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
+  padding-top: 180px - 20px;
+  padding-bottom: 180px;
+  margin-top: -60px;
+  margin-bottom: -60px;
   color: inherit;
-  background-color: #eee;
+  background-image: url("/images/sea-sunny-beach-holiday.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 3268px 2179px;
+          background-size: 3268px 2179px;
 }
 .jumbotron h1,
 .jumbotron .h1 {
   color: inherit;
 }
 .jumbotron p {
-  margin-bottom: 15px;
+  margin-bottom: 90px;
   font-size: 24px;
   font-weight: 200;
 }
@@ -5041,13 +5045,13 @@ a.badge:focus {
 }
 @media screen and (min-width: 768px) {
   .jumbotron {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 288px;
+    padding-bottom: 288px;
   }
   .container .jumbotron,
   .container-fluid .jumbotron {
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-right: 360px;
+    padding-left: 360px;
   }
   .jumbotron h1,
   .jumbotron .h1 {
@@ -6829,6 +6833,9 @@ ul.listnotes li {
   margin: 0 auto;
   line-height: 26px;
 }
+.notes {
+  margin-bottom: 20px;
+}
 img {
   max-width: 100%;
 }
@@ -6841,6 +6848,12 @@ body {
 }
 .about .lead {
   line-height: 45px;
+}
+.siteinfo {
+  margin-right: 25px;
+}
+.sitecopy {
+  margin-left: 25px;
 }
 .footer {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
