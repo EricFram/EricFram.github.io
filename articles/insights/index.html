@@ -5,11 +5,11 @@ articles: active
 description: Articles
 ---
 	<div class="notes">
-
+		<div id="insightsfade1" class="hidden">
      	<div class="notelist">
      		<p><em><a href="{{ site.url }}/articles">View All Categories</a></em></p>
      		<p><strong>Showing Only "Analytics & Insights" Articles</strong></p>
-		
+
 
 		     {% for post in site.categories.insights %}
 		    <ul class="listnotes list-unstyled">
@@ -18,5 +18,12 @@ description: Articles
 		    {% endfor %}
 
 		</div>
-			
+	</div>
 	</div> <!-- .notes -->
+
+	<script>
+	$(document).ready(function () {
+			$('#insightsfade1').fadeIn(700).removeClass('hidden');
+
+	});
+	</script>

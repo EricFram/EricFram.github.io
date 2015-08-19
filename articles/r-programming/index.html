@@ -6,6 +6,7 @@ description: Articles
 ---
 	<div class="notes">
 
+		<div id="rfade1" class="hidden">
      	<div class="notelist">
 
      		<p><em><a href="{{ site.url }}/articles">View All Categories</a></em></p>
@@ -18,5 +19,12 @@ description: Articles
 		    {% endfor %}
 
 		</div>
-			
-	</div> <!-- .notes -->
+
+	</div> </div><!-- .notes -->
+
+	<script>
+	$(document).ready(function () {
+			$('#rfade1').fadeIn(700).removeClass('hidden');
+
+	});
+	</script>
