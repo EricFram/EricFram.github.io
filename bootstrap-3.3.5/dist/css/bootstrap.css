@@ -5019,7 +5019,7 @@ a.badge:focus {
   margin-top: -40px;
   margin-bottom: 10px;
   color: inherit;
-  background-image: url("/images/sea-sunny-beach-holiday.jpg");
+  background-image: url("http://ericfram.com/images/sea-sunny-beach-holiday.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: 1920px 1280px;
           background-size: 1920px 1280px;
@@ -6854,6 +6854,12 @@ body {
 }
 .sitecopy {
   margin-left: 25px;
+}
+.hidden {
+  display: none;
+}
+#in-development {
+  padding-left: 15px;
 }
 .footer {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
