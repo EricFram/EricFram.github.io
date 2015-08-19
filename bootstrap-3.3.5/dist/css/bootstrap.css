@@ -6855,7 +6855,7 @@ body {
 .sitecopy {
   margin-left: 25px;
 }
-.hidden {
+div .hidden {
   display: none;
 }
 #in-development {

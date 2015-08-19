@@ -8,6 +8,7 @@ description: Articles
 
 	<div class="notes">
 
+		<div id="articlefade1" class="hidden">
 		<div class="postfilter">
 
 
@@ -16,10 +17,18 @@ description: Articles
 			<p><strong>Showing All Articles</strong></p>
 
 
-		</div>
+		</div></div>
 
 
-
+	<div id="articlefade2" class="hidden">
      			{% include post-list.html %}
 
-	</div> <!-- .notes -->
+	</div> </div><!-- .notes -->
+
+	<script>
+	$(document).ready(function () {
+			$('#articlefade1').fadeIn(700).removeClass('hidden');
+	    $('#articlefade2').fadeIn(1000).removeClass('hidden');
+
+	});
+	</script>

@@ -10,7 +10,7 @@ description: Contact
 
 
 <div class="contact">
-
+	<div id="contactfade1" class="hidden">
 	<ul class="lead">
 		<li><img class="projectIcon" src="{{ site.url }}/images/linkedin_icon.png"><a href="https://www.linkedin.com/in/ericfram">   LinkedIn </a></li>
 
@@ -20,5 +20,13 @@ description: Contact
 
 		<li><img class="projectIcon" src="{{ site.url }}/images/phone_icon.png">   +1 (424) 645-7082 </li>
 	</ul>
-
 </div>
+</div>
+
+
+<script>
+$(document).ready(function () {
+		$('#contactfade1').fadeIn(700).removeClass('hidden');
+
+});
+</script>
