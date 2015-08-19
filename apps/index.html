@@ -16,8 +16,9 @@ description: Apps
 
 
 
-	<p class="lead">As co-founder at Zippy Brain Inc., I lead or led design, strategy, monetization, marketing, and analytics for all of the following projects.</p>
+	<div id="appsfade1" class="hidden"><p class="lead">As co-founder at Zippy Brain Inc., I lead or led design, strategy, monetization, marketing, and analytics for all of the following projects.</p></div>
 
+<div id="appsfade2" class="hidden">
 <div class="container">
 	<h1 class="section-heading" id="in-development"> In Development </h1>
 
@@ -29,11 +30,9 @@ description: Apps
 				<ul class="lead"> Follow our progress: <a href="{{ site.url  }}/articles/2015/04/08/Next-Project-Personal-Finance-RPG/">Introduction</a> | <a href="{{ site.url}}/articles/2015/05/19/personal-finance-rpg-update-1-gameplay-introduction-and-concept-screens/">Update 1</a> | <a href="{{ site.url }}/articles/2015/07/28/WealthSim-Update-2/">Update 2</a> | <a href="{{ site.url }}/articles/2015/07/29/WealthSim-Update-3-Market-Simulation/">Update 3</a> | <a href="{{ site.url }}/articles/2015/08/01/WealthSim-The-Personal-Finance-RPG-Update-Real-Estate/">Update 4</a></ul>
 			</li>
 		</div>
-
 				<div class="col-md-5">
 					<img class="img-responsive center-block vert-ss" src="{{ site.url }}/images/holder_phone.jpg" alt="WealthSim Screenshot">
 				</div>
-
 		</ul>
 
 		<h1 class="section-heading"> Shipped </h1>
@@ -123,6 +122,16 @@ description: Apps
 
 		</ul>
 </div>
-</div>
+
 			<p class="lead" style="margin-top: 17px">These projects are also showcased on the homepage of <a href="http://zippybrain.com">ZippyBrain.com</a>.</p>
-</div>
+</div></div>
+
+
+<script>
+$(document).ready(function () {
+		$('#appsfade1').fadeIn(700).removeClass('hidden');
+    $('#appsfade2').fadeIn(1000).removeClass('hidden');
+
+});
+
+</script>
