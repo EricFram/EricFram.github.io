@@ -21,6 +21,17 @@ title: Home
 
 <script>
 $(document).ready(function () {
+
+	var docHeight = $( document ).height();
+
+if( docHeight > 1080)
+{$(".jumbotron").css({ "height": docHeight,
+											"background-size": "100% 150%"
+											})};
+//$('.jumbotron').css({ height: $(document).height()})
+
+
+
 		$('#jumbo1').fadeIn(1000).removeClass('hidden');
     $('#fade1').fadeIn(2500).removeClass('hidden');
 		$('#fade2').fadeIn(3500).removeClass('hidden');
