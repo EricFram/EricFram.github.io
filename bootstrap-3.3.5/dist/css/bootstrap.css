@@ -5022,14 +5022,8 @@ a.badge:focus {
   color: inherit;
   background-image: url("http://ericfram.com/images/sea-sunny-beach-holiday.jpg");
   background-repeat: no-repeat;
-  -webkit-background-size: 5120px 2880px;
-          background-size: 5120px 2880px;
-}
-@media screen and (max-width: 1920px) {
-  .jumbotron {
-    -webkit-background-size: 1920px 1280px;
-            background-size: 1920px 1280px;
-  }
+  -webkit-background-size: 1920px 1280px;
+          background-size: 1920px 1280px;
 }
 .jumbotron h1,
 .jumbotron .h1 {
