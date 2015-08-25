@@ -8,7 +8,10 @@ description: Articles
 
 	<div class="notes">
 
-		<div id="articlefade1" class="hidden">
+		<div class="fade-master1">
+
+			<p class="lead">I post writeups on my solutions to business or programming challenges not only for my own reference, but also to help others. Additionally, I rehost articles I write for the Zippy Brain website. Hopefully you will find something useful!
+
 		<div class="postfilter">
 
 
@@ -20,15 +23,7 @@ description: Articles
 		</div></div>
 
 
-	<div id="articlefade2" class="hidden">
+	<div class="fade-master1">
      			{% include post-list.html %}
 
 	</div> </div><!-- .notes -->
-
-	<script>
-	$(document).ready(function () {
-			$('#articlefade1').fadeIn(700).removeClass('hidden');
-	    $('#articlefade2').fadeIn(1000).removeClass('hidden');
-
-	});
-	</script>
