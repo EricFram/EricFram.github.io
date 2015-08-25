@@ -6898,6 +6898,21 @@ div .hidden {
     padding-left: 0;
   }
 }
+.sites .lead {
+  padding-left: 0;
+}
+@media screen and (max-width: 768px) {
+  .sites .lead {
+    padding-left: 0;
+  }
+}
+.site-ss {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.sites-list {
+  list-style: none;
+}
 .fade-master1 {
   opacity: 0;
 }
