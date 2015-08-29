@@ -4382,7 +4382,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-  font-family: "Corporative Thin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Corporative Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 22px;
   letter-spacing: .2em;
 }
@@ -4555,7 +4555,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-color: #4a4a4a;
 }
 .navbar-default .navbar-brand {
-  font-family: "Corporative Thin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Corporative Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #4a4a4a;
   letter-spacing: .2em;
 }
@@ -6898,7 +6898,7 @@ div .hidden {
   padding-left: 15px;
 }
 .footer {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Corporative Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
 .siteinfo {
@@ -6958,6 +6958,11 @@ div .hidden {
   font-family: "Corporative Thin";
 
   src: url('../../../fonts/corporative-thin-webfont.woff') format('woff'), url('../../../fonts/corporative-thin-webfont.woff2') format('woff2'), url('../../../fonts/corporative-thin-webfont.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Corporative Light";
+
+  src: url('../../../fonts/corporative-light-webfont.woff') format('woff'), url('../../../fonts/corporative-light-webfont.woff2') format('woff2'), url('../../../fonts/corporative-light-webfont.ttf') format('truetype');
 }
 @font-face {
   font-family: "Cervo Medium";
