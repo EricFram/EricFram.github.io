@@ -4382,8 +4382,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Corporative Thin", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 22px;
+  letter-spacing: .2em;
 }
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
@@ -4554,8 +4555,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-color: #4a4a4a;
 }
 .navbar-default .navbar-brand {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Corporative Thin", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #4a4a4a;
+  letter-spacing: .2em;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -5061,6 +5063,35 @@ a.badge:focus {
 }
 #jumbo1 {
   height: 90%;
+}
+.headline-container {
+  width: 100%;
+  margin-top: -150px;
+  margin-right: auto;
+  margin-bottom: 150px;
+  margin-left: auto;
+  text-align: center;
+}
+.headline-container #jumbotron-headline1 {
+  font-family: "Corporative Thin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: .2em;
+}
+.headline-container #jumbotron-headline2 {
+  font-family: "Cervo Medium", Helvetica, Arial, sans-serif;
+  letter-spacing: .1em;
+}
+.headline-container #jumbotron-headline3 {
+  font-family: "Corporative Thin", Helvetica, Arial, sans-serif;
+  letter-spacing: .2em;
+}
+.headline-container #jumbotron-headline3 a {
+  color: #333;
+}
+.headline-container #jumbotron-headline3 a:hover {
+  color: #34aadc;
+}
+.headline-container #jumbotron-headline4 {
+  font-family: "Fresh Script", Helvetica, Arial, sans-serif;
 }
 .thumbnail {
   display: block;
@@ -6918,5 +6949,20 @@ div .hidden {
 }
 .fade-master-slow {
   opacity: 0;
+}
+@font-face {
+  font-family: 'Fresh Script';
+
+  src: url('../../../fonts/fresh_script-webfont.woff') format('woff'), url('../../../fonts/fresh_script-webfont.woff2') format('woff2'), url('../../../fonts/fresh_script-webfont.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Corporative Thin";
+
+  src: url('../../../fonts/corporative-thin-webfont.woff') format('woff'), url('../../../fonts/corporative-thin-webfont.woff2') format('woff2'), url('../../../fonts/corporative-thin-webfont.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Cervo Medium";
+
+  src: url('../../../fonts/cervo-medium.woff') format('woff'), url('../../../fonts/cervo-medium.ttf') format('truetype');
 }
 /*# sourceMappingURL=bootstrap.css.map */

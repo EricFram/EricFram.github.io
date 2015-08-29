@@ -236,7 +236,8 @@
     padding-top:    10px;
     padding-bottom: 10px;
     line-height: @line-height-computed;
-    font-family: @headings-font-family;
+    font-family: @nav-font-family;//@headings-font-family;
+    letter-spacing: @nav-letter-spacing;
   }
 
   @media (max-width: @grid-float-breakpoint-max) {
@@ -399,7 +400,8 @@
 
   .navbar-brand {
     color: @navbar-default-brand-color;
-    font-family: @headings-font-family;
+    font-family: @brand-font-family;
+    letter-spacing: @brand-letter-spacing;
     &:hover,
     &:focus {
       color: @navbar-default-brand-hover-color;
