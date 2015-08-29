@@ -6963,6 +6963,7 @@ div .hidden {
 @font-face {
   font-family: "Cervo Medium";
 
+  src: url('../../../fonts/cervo-medium-webfont.eot');
   src: url('../../../fonts/cervo-medium-webfont.woff') format('woff'), url('../../../fonts/cervo-medium-webfont.ttf') format('truetype');
 }
 /*# sourceMappingURL=bootstrap.css.map */
