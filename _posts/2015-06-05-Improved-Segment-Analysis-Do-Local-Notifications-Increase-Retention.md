@@ -69,4 +69,6 @@ This analysis tells us that people who approve notifications are more likely to 
 
 People who are okay with getting notifications and so approve them are likely to come back to an app that sends those notifications. People who don't want notifications are probably going to ignore them. I think it's likely that we continue to see increased retention from users who approve notifications. By presenting more compelling uses for notifications in future updates and projects (such as social interaction or time-based incentives), we'll be able to get more users to approve them and hopefully increase overall retention rates.
 
+As I said, this analysis is biased, and it doesn't directly tell us if local notifications increase retention. A better way to structure the test would be to segment the notification approvers into a group that receives notifications and a group that never actually receives notifications. That way, we could compare those two groups and see if the notifications actually make a difference. Hopefully this is something we will have time to do in the future.
+
 Thanks for taking the time to read this! If you have any questions or comments, please feel free to reach out to me or tweet at me <a href="https://twitter.com/ZippyBrain">@ZippyBrain</a>.
