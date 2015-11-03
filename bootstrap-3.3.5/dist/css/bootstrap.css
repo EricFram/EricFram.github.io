@@ -6953,6 +6953,9 @@ div .hidden {
   margin: none;
   list-style: none;
 }
+#samo-long {
+  word-wrap: break-word;
+}
 .fade-master1 {
   opacity: 0;
 }
