@@ -6929,6 +6929,8 @@ div .hidden {
   }
 }
 .app-type-header {
+  margin-top: 20px;
+  margin-bottom: 40px;
   font-family: "Corporative Thin", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 28px;
   text-align: center;
