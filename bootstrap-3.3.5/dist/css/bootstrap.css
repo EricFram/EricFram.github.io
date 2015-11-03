@@ -6949,6 +6949,8 @@ div .hidden {
   margin-bottom: 30px;
 }
 .sites-list {
+  padding-left: none;
+  margin: none;
   list-style: none;
 }
 .fade-master1 {
