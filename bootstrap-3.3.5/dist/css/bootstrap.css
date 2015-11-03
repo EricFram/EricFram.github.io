@@ -6635,6 +6635,9 @@ button.close {
 .affix {
   position: fixed;
 }
+.wrap {
+  word-wrap: break-word;
+}
 @-ms-viewport {
   width: device-width;
 }
@@ -6927,6 +6930,14 @@ div .hidden {
   .apps .lead {
     padding-left: 0;
   }
+}
+.app-type-header {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-family: "Corporative Thin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  text-align: center;
+  letter-spacing: .2em;
 }
 .sites .lead {
   padding-left: 0;
