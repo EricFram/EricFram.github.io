@@ -4158,7 +4158,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #fff;
-  background-color: #4a4a4a;
+  background-color: #333;
 }
 .nav-stacked > li {
   float: none;
@@ -4557,7 +4557,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default {
   background-color: #fff;
-  border-color: #4a4a4a;
 }
 .navbar-default .navbar-brand {
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
@@ -4573,20 +4572,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-text {
   color: #777;
-}
-.navbar-default .navbar-nav > li > a {
-  color: #777;
-}
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  color: #34aadc;
-  background-color: transparent;
-}
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  color: #fff;
-  background-color: #333;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -6996,6 +6981,10 @@ div .hidden {
   width: 100%;
   max-width: 345px;
 }
+.apps .container {
+  padding-right: 0;
+  padding-left: 0;
+}
 .apps .lead {
   padding-left: 0;
 }
@@ -7031,8 +7020,7 @@ div .hidden {
   margin-bottom: 30px;
 }
 .sites-list {
-  padding-left: none;
-  margin: none;
+  margin-left: -40px;
   list-style: none;
 }
 .fade-master1 {
