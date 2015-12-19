@@ -1185,10 +1185,11 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: 500;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-weight: 700;
   line-height: 1.1;
   color: inherit;
+  letter-spacing: inherit;
 }
 h1 small,
 h2 small,
@@ -5082,11 +5083,13 @@ a.badge:focus {
 .headline-container .jumbotron-headline2 {
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-size: 1.3em;
+  font-weight: 100;
   letter-spacing: .15em;
 }
 .headline-container .jumbotron-headline3 {
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-size: 1.3em;
+  font-weight: 100;
   letter-spacing: .15em;
 }
 .headline-container .jumbotron-headline-work {
@@ -5104,6 +5107,7 @@ a.badge:focus {
 .headline-container .jumbotron-links {
   display: inline-block;
   width: 100px;
+  margin-bottom: 20px;
 }
 .thumbnail {
   display: block;
@@ -6951,10 +6955,16 @@ div .hidden {
 .app-type-header {
   margin-top: 20px;
   margin-bottom: 40px;
-  font-family: "Corporative Thin", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 28px;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-size: 2.5em;
+  font-weight: 700;
   text-align: center;
   letter-spacing: .2em;
+}
+@media screen and (max-width: 768px) {
+  .app-type-header {
+    font-size: 1em;
+  }
 }
 .sites .lead {
   padding-left: 0;
