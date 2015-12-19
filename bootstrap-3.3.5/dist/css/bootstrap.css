@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,700);
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -1184,7 +1185,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -4382,7 +4383,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-  font-family: "Corporative Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   line-height: 22px;
   letter-spacing: .2em;
 }
@@ -4555,7 +4556,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-color: #4a4a4a;
 }
 .navbar-default .navbar-brand {
-  font-family: "Corporative Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-weight: 700;
   color: #4a4a4a;
   letter-spacing: .2em;
 }
@@ -5022,7 +5024,6 @@ a.badge:focus {
   margin-top: -40px;
   margin-bottom: 10px;
   color: inherit;
-  background-image: url("http://ericfram.com/images/sea-sunny-beach-holiday.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: 1920px 1280px;
           background-size: 1920px 1280px;
@@ -5062,7 +5063,7 @@ a.badge:focus {
   }
 }
 #jumbo1 {
-  height: 90%;
+  height: 100%;
 }
 .headline-container {
   margin-top: -150px;
@@ -5071,26 +5072,38 @@ a.badge:focus {
   margin-left: auto;
   text-align: center;
 }
-.headline-container #jumbotron-headline1 {
-  font-family: "Corporative Thin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+.headline-container .jumbotron-headline1 {
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: .25em;
+}
+.headline-container .jumbotron-headline2 {
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+  letter-spacing: .15em;
+}
+.headline-container .jumbotron-headline3 {
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+  letter-spacing: .15em;
+}
+.headline-container .jumbotron-headline-work {
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-size: .8em;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
   letter-spacing: .2em;
 }
-.headline-container #jumbotron-headline2 {
-  font-family: "Cervo Medium", Helvetica, Arial, sans-serif;
-  letter-spacing: .1em;
+.headline-container .jumbotron-links-holder {
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
-.headline-container #jumbotron-headline3 {
-  font-family: "Corporative Thin", Helvetica, Arial, sans-serif;
-  letter-spacing: .2em;
-}
-.headline-container #jumbotron-headline3 a {
-  color: #333;
-}
-.headline-container #jumbotron-headline3 a:hover {
-  color: #34aadc;
-}
-.headline-container #jumbotron-headline4 {
-  font-family: "Fresh Script", Helvetica, Arial, sans-serif;
+.headline-container .jumbotron-links {
+  display: inline-block;
+  width: 100px;
 }
 .thumbnail {
   display: block;
@@ -6878,7 +6891,7 @@ img {
 }
 body {
   padding-top: 70px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 }
 .projectIcon {
   width: 50px;
@@ -6901,8 +6914,11 @@ div .hidden {
   padding-left: 15px;
 }
 .footer {
-  font-family: "Corporative Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-size: .5em;
+  font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: .2em;
 }
 .siteinfo {
   float: right;
@@ -6962,25 +6978,38 @@ div .hidden {
 .fade-master-slow {
   opacity: 0;
 }
+/* OLD FONTS FROM 2015
+
 @font-face {
   font-family: 'Fresh Script';
+  src: url('../../../fonts/fresh_script-webfont.woff') format('woff'),
+       url('../../../fonts/fresh_script-webfont.woff2') format('woff2'),
+       url('../../../fonts/fresh_script-webfont.ttf') format('truetype');
 
-  src: url('../../../fonts/fresh_script-webfont.woff') format('woff'), url('../../../fonts/fresh_script-webfont.woff2') format('woff2'), url('../../../fonts/fresh_script-webfont.ttf') format('truetype');
 }
+
 @font-face {
   font-family: "Corporative Thin";
+  src: url('../../../fonts/corporative-thin-webfont.woff') format('woff'),
+       url('../../../fonts/corporative-thin-webfont.woff2') format('woff2'),
+       url('../../../fonts/corporative-thin-webfont.ttf') format('truetype');
 
-  src: url('../../../fonts/corporative-thin-webfont.woff') format('woff'), url('../../../fonts/corporative-thin-webfont.woff2') format('woff2'), url('../../../fonts/corporative-thin-webfont.ttf') format('truetype');
 }
 @font-face {
   font-family: "Corporative Book";
+  src: url('../../../fonts/corporative-book-webfont.woff') format('woff'),
+       url('../../../fonts/corporative-book-webfont.woff2') format('woff2'),
+       url('../../../fonts/corporative-book-webfont.ttf') format('truetype');
 
-  src: url('../../../fonts/corporative-book-webfont.woff') format('woff'), url('../../../fonts/corporative-book-webfont.woff2') format('woff2'), url('../../../fonts/corporative-book-webfont.ttf') format('truetype');
 }
+
+
 @font-face {
   font-family: "Cervo Medium";
-
   src: url('../../../fonts/cervo-medium-webfont.eot');
-  src: url('../../../fonts/cervo-medium-webfont.woff') format('woff'), url('../../../fonts/cervo-medium-webfont.ttf') format('truetype');
+  src: url('../../../fonts/cervo-medium-webfont.woff') format('woff'),
+       url('../../../fonts/cervo-medium-webfont.ttf') format('truetype');
+
 }
+*/
 /*# sourceMappingURL=bootstrap.css.map */
