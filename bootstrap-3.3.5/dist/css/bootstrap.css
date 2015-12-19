@@ -5109,6 +5109,49 @@ a.badge:focus {
   width: 100px;
   margin-bottom: 20px;
 }
+.headline-container .section-link {
+  text-align: center;
+}
+.box {
+  padding: 5px;
+  color: #34aadc;
+}
+.box:hover {
+  color: #fff;
+  background: #4a4a4a;
+}
+.box:hover a {
+  z-index: 1000;
+  color: #fff;
+}
+.link-hover-box {
+  position: relative;
+}
+.link-hover-box:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  -webkit-transition-duration: .3s;
+       -o-transition-duration: .3s;
+          transition-duration: .2s;
+  -webkit-transition-property: top, left, right, bottom;
+       -o-transition-property: top, left, right, bottom;
+          transition-property: top, left, right, bottom;
+}
+.link-hover-box:hover:before,
+.link-hover-box:focus:before {
+  top: -7px;
+  right: -7px;
+  bottom: -7px;
+  left: -7px;
+  border: #4a4a4a solid 3px;
+  -webkit-transition-delay: .05s;
+       -o-transition-delay: .05s;
+          transition-delay: .05s;
+}
 .thumbnail {
   display: block;
   padding: 4px;

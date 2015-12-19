@@ -126,8 +126,68 @@
   .jumbotron-links {
     display: inline-block;
     width: 100px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+  }
+
+  .section-link {
+    text-align: center;
   }
 
 
+}
+
+// TEXT HOVER EFFECTS FOR JUMBOTRON PAGE
+
+.box{
+  color: #34aadc;
+  padding: 5px;
+}
+
+.box:hover{
+  background: #4a4a4a;
+  color: #fff;
+}
+
+.box:hover a {
+  color: #fff;
+  z-index: 1000;
+}
+
+.link-hover-box {
+  position: relative;
+}
+
+.link-hover-box:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.2s;
+
+  -webkit-transition-property: top, left, right, bottom;
+  -moz-transition-property: top, left, right, bottom;
+  -ms-transition-property: top, left, right, bottom;
+  -o-transition-property: top, left, right, bottom;
+  transition-property: top, left, right, bottom;
+}
+
+.link-hover-box:hover:before, .link-hover-box:focus:before{
+  -webkit-transition-delay: .05s;
+  -moz-transition-delay: .05s;
+  -ms-transition-delay: .05s;
+  -o-transition-delay: .05s;
+  transition-delay: .05s;
+
+  border: #4a4a4a solid 3px;
+  bottom: -7px;
+  left: -7px;
+  top: -7px;
+  right: -7px;
 }
