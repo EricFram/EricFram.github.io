@@ -4224,10 +4224,23 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-top-right-radius: 0;
 }
 .nav-item {
+  width: 95px;
   padding-right: 2px;
   padding-bottom: 2px;
   padding-left: 2px;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-size: .75em;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .2em;
   border: none;
+}
+.nav-item-container {
+  display: inline-block;
+  width: 95px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 .navbar {
   position: relative;
@@ -4585,6 +4598,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #34aadc;
   background-color: transparent;
 }
+.navbar-default .navbar-nav > li > a:hover .nav-item,
+.navbar-default .navbar-nav > li > a:focus .nav-item {
+  border-bottom: none;
+}
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -4594,8 +4611,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .active > a .nav-item,
 .navbar-default .navbar-nav > .active > a:hover .nav-item,
 .navbar-default .navbar-nav > .active > a:focus .nav-item {
-  padding-bottom: 2px;
   border-bottom: 1px solid #333;
+}
+.navbar-default .navbar-nav > .active > a .nav-item:hover,
+.navbar-default .navbar-nav > .active > a:hover .nav-item:hover,
+.navbar-default .navbar-nav > .active > a:focus .nav-item:hover {
+  border-bottom: 1px solid #fff;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,

@@ -422,6 +422,9 @@
       &:focus {
         color: @navbar-default-link-hover-color;
         background-color: @navbar-default-link-hover-bg;
+        .nav-item {
+          border-bottom: none;
+        }
       }
     }
     > .active > a {
@@ -431,10 +434,11 @@
         color: @navbar-default-link-active-color;
         background-color: @navbar-default-link-active-bg;
         .nav-item {
-          padding-bottom: 2px; 
           border-bottom: 1px solid #333;
+          &:hover {
+            border-bottom: 1px solid #fff;
+          }
         }
-
       }
     }
     > .disabled > a {
