@@ -1308,6 +1308,9 @@ a {
   color: #333;
   border-bottom: 1px solid #333;
 }
+a img {
+  border: none;
+}
 a:hover {
   color: #34aadc;
   text-decoration: none;
@@ -1573,7 +1576,7 @@ pre {
   display: block;
   padding: 10.5px;
   margin: 0 0 11px;
-  font-size: 15px;
+  font-size: .7em;
   line-height: 1.42857143;
   color: #333;
   word-break: break-all;
@@ -6966,8 +6969,26 @@ ul.listnotes li {
 }
 .note {
   width: 85%;
-  margin: 0 auto;
+  max-width: 600px;
+  font-size: 1.1em;
   line-height: 26px;
+}
+.note img {
+  max-width: 150%;
+}
+@media (max-width: 940px) {
+  .note img {
+    max-width: 100%;
+  }
+}
+.note .highlight pre {
+  width: 1024px;
+  max-width: 150%;
+}
+@media (max-width: 940px) {
+  .note .highlight pre {
+    max-width: 100%;
+  }
 }
 .notes {
   margin-bottom: 20px;
@@ -6999,6 +7020,10 @@ div .hidden {
 }
 #in-development {
   padding-left: 15px;
+}
+.list-notes {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .footer {
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;

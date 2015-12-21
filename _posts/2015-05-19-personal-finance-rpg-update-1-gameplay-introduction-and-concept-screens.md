@@ -15,9 +15,13 @@ All the screenshots shown here are early mock ups, and the art assets shown (hou
 
 Even at this early stage, we'd love to hear feedback about this project, so feel free to reach out. We're developing this with <a href="https://coronalabs.com/products/corona-sdk/">Corona SDK</a> and plan to release on iOS first.
 <h2>The Gameplay</h2>
-At its core, this app is a role-playing game. For the duration of a round, you will assume the role of a single character (we're calling them "personas" internally for now). Each persona will have a different starting condition (age, income, net worth, education levels, etc.), and a set of 5 lifetime goals that you need to accomplish before the end of the game (i.e. retirement).<br class="none" />
-This will not be a traditional role-playing game in which you assemble a team, fight monsters, and level up. To keep the game educational, we're going a more realistic route. More <a href="http://www.wallstreetsurvivor.com/">Wall Street survivor</a> and less dungeon crawler. Your progress in the game is measured by your goal completion status and your assets.<br class="none" />
-In order to give you plenty of time to weigh your options and strategies, the game will be turn-based. We're still not 100% sure how much time each turn will represent, but we're learning towards 1 month, as that is a typical billing cycle and most people build their budgets by month.<br class="none" />
+
+At its core, this app is a role-playing game. For the duration of a round, you will assume the role of a single character (we're calling them "personas" internally for now). Each persona will have a different starting condition (age, income, net worth, education levels, etc.), and a set of 5 lifetime goals that you need to accomplish before the end of the game (i.e. retirement).
+
+This will not be a traditional role-playing game in which you assemble a team, fight monsters, and level up. To keep the game educational, we're going a more realistic route. More <a href="http://www.wallstreetsurvivor.com/">Wall Street survivor</a> and less dungeon crawler. Your progress in the game is measured by your goal completion status and your assets.
+
+In order to give you plenty of time to weigh your options and strategies, the game will be turn-based. We're still not 100% sure how much time each turn will represent, but we're learning towards 1 month, as that is a typical billing cycle and most people build their budgets by month.
+
 The turns will be structured something like this:
 
 <a href="http://zippybrain.com/wp-content/uploads/2015/05/Anatomy-of-a-Turn.png"><img class="aligncenter wp-image-1927" src="http://zippybrain.com/wp-content/uploads/2015/05/Anatomy-of-a-Turn.png" alt="Anatomy of a Turn" style="width: 750px; max-width: 100%;" /></a>

@@ -12,6 +12,7 @@ Eric Fram
 As promised in <a href="http://zippybrain.com/2015/07/wealthsim-update-2/">Update 2</a>,  this post will explain the system we've developed to simulate different economic environments, including the markets for stocks, bonds, and gold. We've developed a system that simulates the market within a set of parameters. Every game will have different results, since many aspects of the simulation are based on randomness. This is both realistic and will make WealthSim much more replayable.
 
 In the game, there are five different possible economic environments that do a reasonably good job of replicating full stock market cycles. The current economic situation in the game affects stock returns, gold prices, bond interest rates, loan rates, money market rates, and inflation. They are as follows:
+
 <ol>
 	<li><strong>Consolidation/Accumulation</strong>, based roughly on the period from February 2009 to October 2009</li>
 	<li><strong>Upward Advancement/Bull Market</strong>, based roughly on the period from June 2006 to April 2007</li>
@@ -19,9 +20,11 @@ In the game, there are five different possible economic environments that do a r
 	<li><strong>Decline/Bear Market</strong>, based roughly on the period from January 2008 to January 2009</li>
 	<li><strong>Stagflation,</strong> based roughly on the period from 1979 to 1984</li>
 </ol>
+
 The first 4 environments replicate a full stock market cycle. We included stagflation as a way to include a unique economic situation that can force players to significantly reconsider their strategies. We've built our system to be flexible, so we will be able to add or remove other types of economic environments as needed based on feedback.
 
 The game uses the following table to pick which economic environment will occur next based on the "Percent Time" column. I will never pick the same one twice in a row. The number of turns each environment lasts is randomly picked from between that environment's minimum and maximum length (each turn equals one month).
+
 <table style="height: 206px;">
 <tbody>
 <tr>
@@ -65,7 +68,9 @@ The game uses the following table to pick which economic environment will occur
 &nbsp;
 
 Each economic environment has it's own table of possible values for stock returns, interest rates, etc, that I randomly generated within realistic parameters. I'm not going to show those here, since they are pretty big. The game will randomly pick values from the current environment's table each turn.
+
 <h2>Testing the Simulation</h2>
+
 The simulation system we designed will produce realistic, but wildly different results for each game. Over the long term (so hundreds or thousands of turns), the investment returns of different asset classes are in line with their real-life counterparts. In the short term though, lots of interesting things can happen (just like real life).
 
 I've run 20 years (240 turns) of the simulation five different times to demonstrate how it works. In the game, we have four asset classes: Stocks, Bonds, Gold, and Cash (Money Market). Each one behaves like a <a href="https://en.wikipedia.org/wiki/Index_fund">total market index fund</a>, and all dividends and interest payments are automatically reinvested. We've chosen to simplify the market simulation in this way to make the game more accessible and reduce development time. <a href="https://www.betterment.com/resources/investment-strategy/index-fund-portfolios-win/#methodology">Investors should be investing in index funds instead of individual stocks anyways</a>.
@@ -137,6 +142,7 @@ Let's look at each simulation a little more in depth, since an average return do
 
 While the system is working, it still needs a few tweaks. You can see that sometimes the returns on stocks will end up being too high. Generally though, we're getting pretty close! These charts looks a lot like real financial returns charts!
 <h2>Back to Work</h2>
+
 Thanks for checking out this update. WealthSim still needs some work before we are ready for user testing, but we're making very satisfying progress. Stay on the lookout for some more in-depth information about our simulation techniques.
 
 Please feel free to reach out with with any questions or comments to <a href="https://twitter.com/ZippyBrain">@ZippyBrain</a>.
