@@ -6981,6 +6981,12 @@ ul.listnotes li {
     max-width: 100%;
   }
 }
+.note h2 {
+  margin-top: 56px;
+}
+.note h2.date {
+  margin-top: 14px;
+}
 .note .highlight pre {
   width: 1024px;
   max-width: 150%;
