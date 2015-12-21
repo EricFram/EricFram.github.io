@@ -29,7 +29,7 @@ When I first calculated this information, I expected to see that MARPU values we
 
 It is encouraging to see that our newer monetization strategies seem to be improvements on our old ones. To get a better look at our MARPU, I aggregated all the data for each app into an average lifetime MARPU. Figure 2 shows this information. As before, I use an index to obscure our actual figures. This index starts at 100 and uses our worst-performing app's lifetime average MARPU as its base. In this case, it's Beehive Blast, which unfortunately performed worse than its predecessor.
 
-<a href="http://zippybrain.com/wp-content/uploads/2018/04/MARPU_App_Comp.png"><img class="wp-image-1741 size-full" src="http://zippybrain.com/wp-content/uploads/2018/04/MARPU_App_Comp.png" alt="MARPU_App_Comp" /></a> 
+<a href="http://zippybrain.com/wp-content/uploads/2018/04/MARPU_App_Comp.png"><img class="wp-image-1741 size-full" src="http://zippybrain.com/wp-content/uploads/2018/04/MARPU_App_Comp.png" alt="MARPU_App_Comp" /></a>
 
 <em><strong>Figure 2</strong> - Indexed average lifetime MARPU by app (Tools: R, ggplot)</em>
 
@@ -45,7 +45,7 @@ When we compare only advertising revenue, Helitack's numbers look even better! F
 
 As before, I aggregated the MARPU data from Figure 3 into a single chart that allows us to compare average advertising revenue per user over the lifetime of each app. Figure 5 shows this data, and the MARPU is once again indexed to our worst-performing app.
 
-<a href="http://zippybrain.com/wp-content/uploads/2018/04/MARPU_App_Comp_noIAP.png"><img class="wp-image-1742 size-full" src="http://zippybrain.com/wp-content/uploads/2018/04/MARPU_App_Comp_noIAP.png" alt="MARPU_App_Comp_noIAP"  /></a> 
+<a href="http://zippybrain.com/wp-content/uploads/2018/04/MARPU_App_Comp_noIAP.png"><img class="wp-image-1742 size-full" src="http://zippybrain.com/wp-content/uploads/2018/04/MARPU_App_Comp_noIAP.png" alt="MARPU_App_Comp_noIAP"  /></a>
 
 <em><strong>Figure 5</strong> - Indexed average lifetime MARPU by app, excluding IAP revenue (Tools: R, ggplot)</em>
 
@@ -57,4 +57,5 @@ The answer is AdMob interstitial ads shown at the end of each game round. They g
 
 I can't say for sure that AdMob will perform this well for you in your apps, but based on our data, I would definitely say they are worth trying out. We will continue to experiment with other strategies, and will post our updated results in the future.
 <h4><strong>TL;DR - AdMob interstitial ads are really killing it for us</strong></h4>
+
 If you have any questions, feel free to email me at info[at]ZippyBrain.com or tweet me <a href="https://twitter.com/ZippyBrain">@ZippyBrain</a>.

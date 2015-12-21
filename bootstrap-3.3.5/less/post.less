@@ -1,9 +1,24 @@
 // styling for the actual posts
 
 .note {
+  font-size: 1.1em;
   width: 85%;
-  margin: 0 auto;
+  max-width: 600px;
+  //margin: 0 auto;
   line-height: 26px;
+  img {
+    max-width: 150%;
+      @media (max-width: 940px) {
+          max-width: 100%;
+      }
+  }
+  .highlight pre {
+    width: 1024px;
+    max-width: 150%;
+    @media (max-width: 940px) {
+        max-width: 100%;
+    }
+  }
 }
 
 .notes {

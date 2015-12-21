@@ -15,7 +15,7 @@ These files are formatted exactly as they arrive from Flurry. The data contained
 
 ##Introduction##
 
-This document accompanies the post titled "Fight the Fire v3.0 is Coming! Here's What to Expect" that was originally posted on ZippyBrain.com on May 20th, 2015. [Link to the Article](http://zippybrain.com/2015/05/fight-the-fire-v3-0-is-coming-heres-what-to-expect/). The code included here will show you how I used Flurry event parameter data to find out which levels in Fight the Fire are just too hard. 
+This document accompanies the post titled "Fight the Fire v3.0 is Coming! Here's What to Expect" that was originally posted on ZippyBrain.com on May 20th, 2015. [Link to the Article](http://zippybrain.com/2015/05/fight-the-fire-v3-0-is-coming-heres-what-to-expect/). The code included here will show you how I used Flurry event parameter data to find out which levels in Fight the Fire are just too hard.
 
 Fight the Fire has custom Flurry events that log when users start a level and that log when users complete a level. Each of these events also has a parameter, which logs which level these events relate to. This data is all anonymous, and we don't have any way to track it to a specific device.
 
@@ -80,7 +80,7 @@ head(ftf.Attempts)
 ## 6     6   299026
 ```
 
-Now let's see which levels get played the most (I'm not worryied about making the graph super attractive yet):
+Now let's see which levels get played the most (I'm not worried about making the graph super attractive yet):
 
 
 ```r

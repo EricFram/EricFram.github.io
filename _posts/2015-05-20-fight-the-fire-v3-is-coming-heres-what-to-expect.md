@@ -9,12 +9,14 @@ Eric Fram
 <em>This article was originally posted on ZippyBrain.com on May 20, 2015. [Link](http://zippybrain.com/2015/05/fight-the-fire-v3-0-is-coming-heres-what-to-expect/)</em>
 
 <h2>What's Changing?</h2>
+
 There are two big changes that you'll notice when we release the update:
 <ol>
 	<li><strong>The Fire Monitoring Station is now free, and there are no longer banners ads during game rounds</strong></li>
 	<li><strong>Level progression is more forgiving, and difficulty between regions scales more smoothly</strong></li>
 </ol>
 <h2>Why?</h2>
+
 Since we released Fight the Fire, we've received a lot of great user feedback. Along with that, we've collected tons of usage analytics data through Flurry. We now have a much better idea of what parts of Fight the Fire we can improve.
 
 <strong>Users: "Fight the Fire is Confusing"</strong>
@@ -45,6 +47,7 @@ Level 19 has a 4% overall success rate, and level 20 has a 6% success rate. It's
 
 Once players have progressed into the premium levels, they're still running into problems near the end of each zone. Success rates for levels 30 and 40 are just 5%. We'll make these a little bit easier as well so that people can keep progressing and so we finally have an excuse to release more levels.
 <h2>Coming Soon!</h2>
+
 We've already made significant progress actually implementing the changes into the app. The only thing that we can't really predict is how long it will take for Apple to approve the update once we submit it. We haven't had many issues with getting approval in the past, so I don't anticipate that we'll get delayed too much on that stage. Even so, I don't want to give a hard release date yet. It will be soon.
 
 If you have any questions or comments, hit me up on Twitter <a href="https://twitter.com/i/notifications">@ZippyBrain</a>.
