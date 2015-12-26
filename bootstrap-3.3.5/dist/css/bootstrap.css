@@ -7030,7 +7030,8 @@ div .hidden {
 }
 .showcase-divider {
   display: table;
-  border-top: 1px solid black;
+  max-width: 100%;
+  border-top: 2px solid black;
 }
 .footer {
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
