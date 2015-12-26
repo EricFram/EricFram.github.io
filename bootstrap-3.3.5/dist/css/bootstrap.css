@@ -7028,6 +7028,11 @@ div .hidden {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+.showcase-divider {
+  display: table;
+  max-width: 100%;
+  border-top: 2px solid black;
+}
 .footer {
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-size: .5em;
