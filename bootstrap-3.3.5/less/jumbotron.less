@@ -83,19 +83,22 @@
   margin-top: -100px;
   margin-bottom: 150px;
 
-
+  .headerDivider {
+    font-family:  'Alte Haas Grotesk Bold', 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  }
 
   .jumbotron-headline1 {
-    font-family:  'Source Sans Pro', Helvetica, Arial, sans-serif;
+    font-family:  'Alte Haas Grotesk Bold', 'Source Sans Pro', Helvetica, Arial, sans-serif;
     letter-spacing: .25em;
     font-weight: 700;
     text-align: center;
     font-size: 2em;
-    display: block;
-    margin-left: .13em;
+    display: inline;
+    // margin-left: .13em;
 
     @media screen and (max-width: 550px){
         display: block;
+        text-align: left;
     }
   }
   .jumbotron-headline2 {
@@ -103,11 +106,15 @@
     letter-spacing: .13em;
     font-size: 1em;
     font-weight: 300;
-    display: block;
+    display: inline;
     text-align: center;
+    margin-left: 15px;
 
     @media screen and (max-width: 550px){
         display: block;
+        margin-right: none;
+        text-align: left;
+        margin-left: 0px;
     }
   }
 
@@ -120,21 +127,23 @@
 
     @media screen and (max-width: 550px){
         display: block;
+        text-align: left;
     }
   }
 
   .jumbotron-headline-work {
-    font-family:  'Source Sans Pro',Helvetica,Arial,sans-serif;
+    font-family:  'Alte Haas Grotesk Bold','Source Sans Pro',Helvetica,Arial,sans-serif;
     letter-spacing: .2em;
     font-weight: 700;
     font-size: .7em;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
   }
 
   .jumbotron-links-holder {
-    margin-top: 150px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 400px;
+    margin-right: 165px;
 
     a {
       border: none;
@@ -211,4 +220,55 @@
   left: -5px;
   top: -5px;
   right: -5px;
+}
+
+/* Customer hover effects */
+.custombox{
+  color: #333;
+  padding: 4px;
+}
+
+.customboxbox:hover{
+
+}
+
+.custombox:hover a {
+  color: #fff;
+  z-index: 1000;
+}
+
+.custombox .link-hover-box {
+  position: relative;
+}
+
+.custombox .link-hover-box:before {
+  content: '';
+  position: absolute;
+  bottom: 1;
+  left: 0;
+  top: 0;
+  right: 0;
+
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.2s;
+
+  -webkit-transition-property: top, left, right, bottom;
+  -moz-transition-property: top, left, right, bottom;
+  -ms-transition-property: top, left, right, bottom;
+  -o-transition-property: top, left, right, bottom;
+  transition-property: top, left, right, bottom;
+}
+
+.custombox .link-hover-box:hover:before, .link-hover-box:focus:before{
+  -webkit-transition-delay: .00s;
+  -moz-transition-delay: .00s;
+  -ms-transition-delay: .00s;
+  -o-transition-delay: .00s;
+  transition-delay: .00s;
+
+  border-bottom: #333 solid 3px;
+  bottom: -5px;
 }

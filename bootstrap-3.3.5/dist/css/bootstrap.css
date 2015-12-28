@@ -1185,7 +1185,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-family: 'Alte Haas Grotesk Bold', 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-weight: 700;
   line-height: 1.1;
   color: inherit;
@@ -4231,9 +4231,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-right: 2px;
   padding-bottom: 2px;
   padding-left: 2px;
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-family: 'Alte Haas Grotesk Bold', 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-size: .75em;
-  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: .2em;
@@ -4407,7 +4406,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-family: 'Alte Haas Grotesk Regular', 'Source Sans Pro', Helvetica, Arial, sans-serif;
   line-height: 22px;
   letter-spacing: .2em;
 }
@@ -4579,7 +4578,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: #fff;
 }
 .navbar-default .navbar-brand {
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-family: 'Alte Haas Grotesk Bold', 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-weight: 700;
   color: #4a4a4a;
   letter-spacing: .2em;
@@ -5110,10 +5109,12 @@ a.badge:focus {
   margin-left: auto;
   text-align: center;
 }
+.headline-container .headerDivider {
+  font-family: 'Alte Haas Grotesk Bold', 'Source Sans Pro', Helvetica, Arial, sans-serif;
+}
 .headline-container .jumbotron-headline1 {
-  display: block;
-  margin-left: .13em;
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  display: inline;
+  font-family: 'Alte Haas Grotesk Bold', 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-size: 2em;
   font-weight: 700;
   text-align: center;
@@ -5122,10 +5123,12 @@ a.badge:focus {
 @media screen and (max-width: 550px) {
   .headline-container .jumbotron-headline1 {
     display: block;
+    text-align: left;
   }
 }
 .headline-container .jumbotron-headline2 {
-  display: block;
+  display: inline;
+  margin-left: 15px;
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-size: 1em;
   font-weight: 300;
@@ -5135,6 +5138,9 @@ a.badge:focus {
 @media screen and (max-width: 550px) {
   .headline-container .jumbotron-headline2 {
     display: block;
+    margin-right: none;
+    margin-left: 0;
+    text-align: left;
   }
 }
 .headline-container .jumbotron-headline3 {
@@ -5147,19 +5153,21 @@ a.badge:focus {
 @media screen and (max-width: 550px) {
   .headline-container .jumbotron-headline3 {
     display: block;
+    text-align: left;
   }
 }
 .headline-container .jumbotron-headline-work {
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-family: 'Alte Haas Grotesk Bold', 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-size: .7em;
   font-weight: 700;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   letter-spacing: .2em;
 }
 .headline-container .jumbotron-links-holder {
-  margin-top: 150px;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-right: 165px;
+  margin-bottom: 400px;
 }
 .headline-container .jumbotron-links-holder a {
   border: none;
@@ -5210,6 +5218,40 @@ a.badge:focus {
   bottom: -5px;
   left: -5px;
   border: #333 solid 3px;
+  -webkit-transition-delay: .00s;
+       -o-transition-delay: .00s;
+          transition-delay: .00s;
+}
+/* Customer hover effects */
+.custombox {
+  padding: 4px;
+  color: #333;
+}
+.custombox:hover a {
+  z-index: 1000;
+  color: #fff;
+}
+.custombox .link-hover-box {
+  position: relative;
+}
+.custombox .link-hover-box:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 1;
+  left: 0;
+  content: '';
+  -webkit-transition-duration: .3s;
+       -o-transition-duration: .3s;
+          transition-duration: .2s;
+  -webkit-transition-property: top, left, right, bottom;
+       -o-transition-property: top, left, right, bottom;
+          transition-property: top, left, right, bottom;
+}
+.custombox .link-hover-box:hover:before,
+.link-hover-box:focus:before {
+  bottom: -5px;
+  border-bottom: #333 solid 3px;
   -webkit-transition-delay: .00s;
        -o-transition-delay: .00s;
           transition-delay: .00s;
@@ -7054,7 +7096,7 @@ div .hidden {
   border-top: 2px solid black;
 }
 .footer {
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-family: 'Alte Haas Grotesk Regular', 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-size: .5em;
   font-weight: 700;
   text-transform: uppercase;
@@ -7094,7 +7136,7 @@ div .hidden {
 .app-type-header {
   margin-top: 20px;
   margin-bottom: 40px;
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-family: 'Alte Haas Grotesk Bold', 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-size: 2.5em;
   font-weight: 700;
   text-align: center;
@@ -7161,4 +7203,19 @@ div .hidden {
 
 }
 */
+@font-face {
+  font-family: 'Alte Haas Grotesk Bold';
+
+  src: url('../../../fonts/altehaasgroteskbold-webfont.woff') format('woff'), url('../../../fonts/altehaasgroteskbold-webfont.woff2') format('woff2'), url('../../../fonts/AlteHaasGroteskBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Alte Haas Grotesk Regular';
+
+  src: url('../../../fonts/altehaasgroteskregular-webfont.woff') format('woff'), url('../../../fonts/altehaasgroteskregular-webfont.woff2') format('woff2'), url('../../../fonts/AlteHaasGroteskRegular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Nevis';
+
+  src: url('../../../fonts/nevis.ttf') format('truetype');
+}
 /*# sourceMappingURL=bootstrap.css.map */
