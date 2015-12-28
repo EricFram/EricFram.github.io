@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,700,600,400italic,300,600italic);
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -5104,41 +5104,61 @@ a.badge:focus {
   height: 100%;
 }
 .headline-container {
-  margin-top: -150px;
+  margin-top: -100px;
   margin-right: auto;
   margin-bottom: 150px;
   margin-left: auto;
   text-align: center;
 }
 .headline-container .jumbotron-headline1 {
+  display: block;
+  margin-left: .13em;
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-size: 2em;
   font-weight: 700;
   text-align: center;
   letter-spacing: .25em;
 }
+@media screen and (max-width: 550px) {
+  .headline-container .jumbotron-headline1 {
+    display: block;
+  }
+}
 .headline-container .jumbotron-headline2 {
+  display: block;
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-  font-size: 1.3em;
-  font-weight: 100;
-  letter-spacing: .15em;
+  font-size: 1em;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: .13em;
+}
+@media screen and (max-width: 550px) {
+  .headline-container .jumbotron-headline2 {
+    display: block;
+  }
 }
 .headline-container .jumbotron-headline3 {
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-  font-size: 1.3em;
-  font-weight: 100;
-  letter-spacing: .15em;
+  font-size: 1em;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: .13em;
+}
+@media screen and (max-width: 550px) {
+  .headline-container .jumbotron-headline3 {
+    display: block;
+  }
 }
 .headline-container .jumbotron-headline-work {
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-  font-size: .8em;
+  font-size: .7em;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: .2em;
 }
 .headline-container .jumbotron-links-holder {
-  margin-top: 100px;
+  margin-top: 150px;
   margin-bottom: 20px;
 }
 .headline-container .jumbotron-links-holder a {
