@@ -4613,12 +4613,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .active > a .nav-item,
 .navbar-default .navbar-nav > .active > a:hover .nav-item,
 .navbar-default .navbar-nav > .active > a:focus .nav-item {
-  border-bottom: 1px solid #333;
+  border-bottom: 2px solid #333;
 }
 .navbar-default .navbar-nav > .active > a .nav-item:hover,
 .navbar-default .navbar-nav > .active > a:hover .nav-item:hover,
 .navbar-default .navbar-nav > .active > a:focus .nav-item:hover {
-  border-bottom: 1px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
