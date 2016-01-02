@@ -7218,4 +7218,46 @@ div .hidden {
 
   src: url('../../../fonts/nevis.ttf') format('truetype');
 }
+.work-intro {
+  margin-top: 65px;
+  margin-bottom: 130px;
+}
+@media screen and (max-width: 768px) {
+  .work-intro {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .select-project-category {
+    margin-top: 20px;
+  }
+}
+.select-project-box {
+  margin-bottom: -2px;
+  text-align: left;
+  border: 2px #333 solid;
+}
+.select-project-box .select-project-icon {
+  width: auto;
+  height: 45px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.select-project-box .select-project-item {
+  padding: 5px;
+  font-family: 'Alte Haas Grotesk Bold', 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-size: .45em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+.select-project-box .select-project-item p {
+  margin-bottom: 0;
+}
+.select-project-box :hover {
+  color: #fff;
+  background-color: #333;
+}
+.select-project-box .see-more p {
+  text-align: center;
+}
 /*# sourceMappingURL=bootstrap.css.map */
