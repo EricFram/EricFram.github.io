@@ -1,9 +1,10 @@
 
 .work-intro {
   margin-top: 65px;
-  margin-bottom: 130px;
+  margin-bottom: 150px;
   @media screen and (max-width: @screen-sm-min){
     margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 
@@ -33,8 +34,16 @@
     text-transform: uppercase;
     letter-spacing: .2em;
 
+    @media screen and (max-width: @screen-sm-min){
+      font-size: .55em;
+    }
+
     p {
       margin-bottom: 0px;
+      @media screen and (max-width: @screen-sm-min){
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
     }
 
 
@@ -47,5 +56,26 @@
 
   .see-more p {
     text-align: center;
+
   }
+}
+
+.showcase-divider {
+  border-top: 2px solid black;
+  display: table;
+  max-width: 100%;
+  ul {
+    list-style: none;
+  }
+}
+
+.app-type-header {
+  margin-top: 100px;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
 }

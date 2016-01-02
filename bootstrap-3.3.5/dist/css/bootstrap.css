@@ -7220,11 +7220,12 @@ div .hidden {
 }
 .work-intro {
   margin-top: 65px;
-  margin-bottom: 130px;
+  margin-bottom: 150px;
 }
 @media screen and (max-width: 768px) {
   .work-intro {
     margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -7250,14 +7251,49 @@ div .hidden {
   text-transform: uppercase;
   letter-spacing: .2em;
 }
+@media screen and (max-width: 768px) {
+  .select-project-box .select-project-item {
+    font-size: .55em;
+  }
+}
 .select-project-box .select-project-item p {
   margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .select-project-box .select-project-item p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 .select-project-box :hover {
   color: #fff;
   background-color: #333;
 }
 .select-project-box .see-more p {
+  text-align: center;
+}
+.showcase-divider {
+  display: table;
+  max-width: 100%;
+  border-top: 2px solid black;
+}
+.showcase-divider ul {
+  list-style: none;
+}
+.app-type-header {
+  margin-top: 100px;
+}
+.anchor {
+  position: relative;
+  top: -100px;
+  display: block;
+  visibility: hidden;
+}
+.redirect-notice {
+  margin-top: 100px;
+  margin-right: auto;
+  margin-bottom: 500px;
+  margin-left: auto;
   text-align: center;
 }
 /*# sourceMappingURL=bootstrap.css.map */
