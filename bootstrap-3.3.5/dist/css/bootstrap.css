@@ -7218,4 +7218,89 @@ div .hidden {
 
   src: url('../../../fonts/nevis.ttf') format('truetype');
 }
+.work-intro {
+  margin-top: 65px;
+  margin-bottom: 150px;
+}
+@media screen and (max-width: 768px) {
+  .work-intro {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .select-project-category {
+    margin-top: 20px;
+  }
+}
+.select-project-box {
+  margin-bottom: -2px;
+  text-align: left;
+  border: 2px #333 solid;
+}
+.select-project-box .select-project-icon {
+  width: auto;
+  height: 45px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.select-project-box .select-project-item {
+  padding: 5px;
+  font-family: 'Alte Haas Grotesk Bold', 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-size: .45em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+@media screen and (max-width: 768px) {
+  .select-project-box .select-project-item {
+    font-size: .55em;
+  }
+}
+.select-project-box .select-project-item p {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .select-project-box .select-project-item p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+.select-project-box :hover {
+  color: #fff;
+  background-color: #333;
+}
+.select-project-box .see-more p {
+  text-align: center;
+}
+.showcase-divider {
+  display: table;
+  max-width: 100%;
+  border-top: 2px solid black;
+}
+.app-type-header {
+  margin-top: 100px;
+}
+.anchor {
+  position: relative;
+  top: -100px;
+  display: block;
+  visibility: hidden;
+}
+.back-to-top {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: 'Alte Haas Grotesk Bold', 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-size: .8em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+.redirect-notice {
+  margin-top: 100px;
+  margin-right: auto;
+  margin-bottom: 500px;
+  margin-left: auto;
+  text-align: center;
+}
 /*# sourceMappingURL=bootstrap.css.map */
