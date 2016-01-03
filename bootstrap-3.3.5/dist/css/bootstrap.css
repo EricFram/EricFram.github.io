@@ -7277,9 +7277,6 @@ div .hidden {
   max-width: 100%;
   border-top: 2px solid black;
 }
-.showcase-divider ul {
-  list-style: none;
-}
 .app-type-header {
   margin-top: 100px;
 }
@@ -7288,6 +7285,16 @@ div .hidden {
   top: -100px;
   display: block;
   visibility: hidden;
+}
+.back-to-top {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: 'Alte Haas Grotesk Bold', 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-size: .8em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .2em;
 }
 .redirect-notice {
   margin-top: 100px;
