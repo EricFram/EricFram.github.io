@@ -76,6 +76,16 @@ description: Work
         <!-- Utility -->
         <div class="col-md-3">
           <p class="select-project-category">Utility</p>
+
+          <a href="#weather-app-desc">
+            <div class="select-project-box">
+              <div class="select-project-item">
+                <p>
+                  <img src="{{ site.url }}/images/app_icons/weather-rounded.png" class="select-project-icon"> Stratus Weather </p>
+              </div>
+            </div>
+          </a>
+
           <a href="#samopark-app-desc">
             <div class="select-project-box">
               <div class="select-project-item">
@@ -84,6 +94,7 @@ description: Work
               </div>
             </div>
           </a>
+
         </div>
 
         <!-- Web -->
@@ -232,11 +243,38 @@ description: Work
 
     <!-- UTILITY -->
     <h1 class="app-type-header">UTILITY</h1>
+
+    <!-- STRATUS WEATHER -->
     <div class="showcase-divider">
+      <div class="anchor" id="weather-app-desc"></div>
+      <div class="col-md-7">
+        <h2 class="section-heading">Stratus Weather: Hyperlocal Conditions and Forecasts  -
+          <a class="projectTitle">iOS</a>
+          <span class="label label-info">Submission Pending</span>
+        </h2>
+        <p class="lead">
+          This app allows you to view weather data for both your current location and for
+          any searchable location, including addresses, monuments, or
+          place names. Specific location lookups are powered by
+          <a href="https://developers.google.com/maps/documentation/javascript/geocoding">
+            Google's Geocoding Service</a>. Weather data is powered by <a href="http://http://forecast.io">Forecast.io</a>,
+              which can return highly localized forecasts and conditions.
+            </p>
+
+            <p class="lead">Built with <a href="https://angularjs.org/">AngularJS</a> and <a href="http://ionicframework.com/">Ionic</a>
+            </div>
+            <div class="col-md-5">
+              <img class="img-responsive center-block vert-ss" src="{{ site.url }}/images/apps_showcase/stratus_weather_ss.png" alt="Weather App Screenshot">
+            </div>
+
+          </div>
+
+
+      <!-- SAMO PARK -->
+        <div class="showcase-divider">
       <div class="anchor" id="samopark-app-desc"></div>
       <h2 class="section-heading">Santa Monica Parking: Public Garage and Lot Status -
-        <a class="projectTitle">iOS</a>
-        <span class="label label-info">Awaiting Approval</span>
+        <a href="https://itunes.apple.com/us/app/santa-monica-parking-public/id1071323912?ls=1&mt=8" class="projectTitle">iOS</a>
       </h2>
       <p class="lead"> This app gives you access to live public parking data for Santa Monica. Garage status can be viewed on a map or in a searchable table. All information is retrieved from the City of Santa Monica's
         <a href="https://parking.api.smgov.net/">Parking Data API</a>. </p>
@@ -251,12 +289,14 @@ description: Work
       <div class="col-md-3">
         <img class="img-responsive center-block site-ss" src="/images/sites_ss/samo park/samopark-iphone.png">
       </div>
+
       <a href="#work-intro-desc">
         <div class="back-to-top">
           <p>Back to Top</p>
         </div>
       </a>
-    </div>
+
+
 
 
     <!-- WEB -->
