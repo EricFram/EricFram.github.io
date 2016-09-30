@@ -78,7 +78,7 @@ In the early game, players won’t be too excited by the returns they get from t
 
 ##Technical##
 
-Limitless Fortune was my first mostly solo development project, and since I am pretty comfortable working with [AngularJS](https://angularjs.org/)/[Ionic](http://ionicframework.com/), I decided to go with that. Even though these frameworks are not normally well-suited for game development, they actually work great for a management simulation game like Limitless Fortune. The game includes a lot of UI, so being able to build menus with HTML/CSS rather than some other proprietary method saved me a ton of time.
+Limitless Fortune was my first mostly solo major coding project, and since I am pretty comfortable working with [AngularJS](https://angularjs.org/)/[Ionic](http://ionicframework.com/), I decided to go with that. Even though these frameworks are not normally well-suited for game development, they actually work great for a management simulation game like Limitless Fortune. The game includes a lot of UI, so being able to build menus with HTML/CSS rather than some other proprietary method saved me a ton of time.
 
 The game stores all gameplay data, including the current game and any high scores, in a sqlite database. Any time the user makes a change, that change is automatically stored. This way, users who get interrupted while playing or something like that will not lose any of their progress.
 
