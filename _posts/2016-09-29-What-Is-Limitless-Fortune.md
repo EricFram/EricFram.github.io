@@ -36,7 +36,7 @@ Unlike a lot of other management games, buying a space ship in Limitless Fortune
 
 The game also keeps track of insurance and maintenance costs for ships. The gritty details are automated, but players have to consider that their greatest asset might also cost them a lot more money that they might expect. This is meant to mirror the real-life costs of maintaining and insuring real estate cars, boats, or other assets.
 
-Many of the games ships can only be used after beating the game in certain ways. I don’t want to spoil everything, so play the game to find out!
+Many of the game's ships can only be used after beating the game in certain ways. I don’t want to spoil everything, so play the game to find out!
 
 ###Planets and Trade###
 
