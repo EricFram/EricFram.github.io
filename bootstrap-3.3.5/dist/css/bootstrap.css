@@ -7061,6 +7061,11 @@ ul.listnotes li {
 img {
   max-width: 100%;
 }
+.blog-entry-image-small {
+  width: 400px;
+  max-width: 100%;
+  margin: 20px 0;
+}
 body {
   padding-top: 70px;
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
