@@ -14,7 +14,7 @@ I realized that it had been some time since my last post, and it also occurred t
 
 The gameplay is turn-based, where each turn represents one month. Travel between different planets can take anywhere from one month to several years, so players must carefully consider their destinations. Many expenses accrue each month, regardless of how long the planetary transfer lasts, so budgeting for journeys is an important way to avoid going deep into debt and paying high interest rates. Players will also have various types of encounters along the way. As time passes, each planet transits around the sun, moving closer or farther away from other planets. Because of this, the most profitable trade routes are constantly shifting.
 
-To win the game, you can buy a residency permit for one of the system's most desirable worlds and retire. Your stats are posted to leaderboards, so you can see how successful you were relative to other traders. There are 5 different places you can retire.
+To win the game, players can buy a residency permit for one of the system's most desirable worlds and retire. Game stats are posted to leaderboards, so players can see how successful and efficient they were relative to other traders. There are 5 different places players can retire.
 
 <img class="blog-entry-image-small" src="{{ site.url }}/images/what-is-limitless-fortune-images/lf-res-permit.png" rel="lf res permit">
 
@@ -30,7 +30,7 @@ If you’ve never tried out Limitless Fortune, it’s currently available on the
 
 Players start the game with a tiny, unimpressive space ship, the Deimosian XJ-22. To start making serious dough, players need to upgrade to something with a larger cargo capacity. As of v1.3, the game includes 20 different space ships players can buy or rent. They include everything from tiny little capsules to massive, space station-sized behemoths.
 
-Unlike a lot of other management games, buying a space ship in Limitless Fortune is not as simple as just saving up money and buying it. Sure that works, but players can also rent space ships for a monthly fee, or mortgage your space ship with either a fifteen- or thirty-year mortgage. The financial outcomes of these four different purchasing options are all simulated accurately. For example, if a player purchases a spaceship with a 15-year mortgage, he or she will continue to build equity in it month-to-month according to a realistic amortization schedule based on in-game interest rates.
+Unlike a lot of other management games, buying a space ship in Limitless Fortune is not as simple as just saving up money and buying it. Sure that works, but players can also rent space ships for a monthly fee, or mortgage their space ship with either a fifteen- or thirty-year mortgage. The financial outcomes of these four different purchasing options are all simulated accurately. For example, if a player purchases a spaceship with a fifteen-year mortgage, he or she will continue to build equity in it month-to-month according to a realistic amortization schedule based on in-game interest rates.
 
 <img class="blog-entry-image-small" src="{{ site.url }}/images/what-is-limitless-fortune-images/lf-ship-market.png" rel="lf torus">
 
@@ -62,7 +62,7 @@ To help players keep track of all the financial information in the game, Limitle
 
 <img class="blog-entry-image-small" src="{{ site.url }}/images/what-is-limitless-fortune-images/lf-finances2.png" rel="lf finances">
 
-All of your in-game financial activity is tracked and is available to check at any time. This includes things like stocks and bonds, trade inventory (using average cost basis valuation), and total net worth.
+All in-game financial activity is tracked and is available to check at any time. This includes things like stocks and bonds, trade inventory (using average cost basis valuation), and total net worth.
 
 ###Investing###
 
