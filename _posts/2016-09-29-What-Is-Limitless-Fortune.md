@@ -18,7 +18,7 @@ To win the game, players can buy a residency permit for one of the system's most
 
 <img class="blog-entry-image-small" src="{{ site.url }}/images/what-is-limitless-fortune-images/lf-res-permit.png" rel="lf res permit">
 
-The game’s underlying goal is to teach basic personal finance concepts in an indirect and unobtrusive way. To play the game well, players need to manage expenses and debt, prepare for unexpected expenses, invest in financial markets, and make good decisions about when to buy our rent property. The in-game mechanisms for all finances are realistic, so hopefully, some players will transfer these concepts into their own financial lives.
+The game’s underlying goal is to teach basic personal finance concepts in an indirect and unobtrusive way. To play the game well, players need to manage expenses and debt, prepare for unexpected expenses, invest in financial markets, and make good decisions about when to buy our rent property. The in-game mechanisms for all finances are realistic, so hopefully, some players will transfer these concepts into their own financial lives. Many of the educational aspects of WealthSim, a cancelled project, have been carried over. 
 
 If you’ve never tried out Limitless Fortune, it’s currently available on the [App Store](https://itunes.apple.com/us/app/limitless-fortune-orbital/id1101932740?ls=1&mt=8). You can also learn more at [LimitlessFortuneGame.com](http://limitlessfortunegame.com/).
 
