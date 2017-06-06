@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Limitless Fortune Let's Play on Youtube"
+title:  "[Let's Play] Limitless Fortune: Orbital Trade and Investment (iOS) - Part 1"
 date:   2017-06-05
 categories: limitless-fortune
 ---
